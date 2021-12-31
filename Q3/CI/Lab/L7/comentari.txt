@@ -1,0 +1,7 @@
+Segurament estic cometent algun petit error, però sóc incapaç de generar el .hex.
+
+cp "Release.hex" "../../../../../../Desktop/PIC18F45K22.hex"
+cp: cannot create regular file `../../../../../../Desktop/PIC18F45K22.hex': No such file or directory
+make: *** [Release] Error 1
+
+Error code 2

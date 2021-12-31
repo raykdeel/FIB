@@ -1,0 +1,8 @@
+De nou, no puc generar el fitxer .hex (sí, està l'opció release).
+L'error és el següent : 
+
+	"make: *** [Release] Error 1 proteus .hex"
+
+Al estar els laboratoris tancats durant aquestes "vacances", 
+no puc accedir a un d'ells i generar el .hex com faig normalment, per tant,
+no hi ha .hex.

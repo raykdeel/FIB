@@ -1,0 +1,298 @@
+
+
+Microchip Technology PIC18 Macro Assembler V2.00 build -1524193055 
+                                                                                                           Sun Dec 09 12:06:00 2018
+
+
+     1                           
+     2                           	; Microchip MPLAB XC8 C Compiler V2.00
+     3                           	; Copyright (C) 2018 Microchip Technology Inc.
+     4                           
+     5                           	; Auto-generated runtime startup code for final link stage.
+     6                           
+     7                           	;
+     8                           	; Compiler options:
+     9                           	;
+    10                           	; -G --chip=18F45K22 -ODebug.cof main.p1 RUTINE~1.p1
+    11                           	;
+    12                           
+    13                           
+    14                           	processor	18F45K22
+    15                           
+    16                           	GLOBAL	_main,start
+    17                           	FNROOT	_main
+    18                           
+    19  0000                     
+    20                           	psect	config,class=CONFIG,delta=1,noexec
+    21                           	psect	idloc,class=IDLOC,delta=1,noexec
+    22                           	psect	const,class=CONST,delta=1,reloc=2,noexec
+    23                           	psect	smallconst,class=SMALLCONST,delta=1,reloc=2,noexec
+    24                           	psect	mediumconst,class=MEDIUMCONST,delta=1,reloc=2,noexec
+    25                           	psect	rbss,class=COMRAM,space=1,noexec
+    26                           	psect	bss,class=RAM,space=1,noexec
+    27                           	psect	rdata,class=COMRAM,space=1,noexec
+    28                           	psect	irdata,class=CODE,space=0,reloc=2,noexec
+    29                           	psect	bss,class=RAM,space=1,noexec
+    30                           	psect	data,class=RAM,space=1,noexec
+    31                           	psect	idata,class=CODE,space=0,reloc=2,noexec
+    32                           	psect	nvrram,class=COMRAM,space=1,noexec
+    33                           	psect	nvbit,class=COMRAM,bit,space=1,noexec
+    34                           	psect	temp,ovrld,class=COMRAM,space=1,noexec
+    35                           	psect	struct,ovrld,class=COMRAM,space=1,noexec
+    36                           	psect	rbit,class=COMRAM,bit,space=1,noexec
+    37                           	psect	bigbss,class=BIGRAM,space=1,noexec
+    38                           	psect	bigdata,class=BIGRAM,space=1,noexec
+    39                           	psect	ibigdata,class=CODE,space=0,reloc=2,noexec
+    40                           	psect	farbss,class=FARRAM,space=0,reloc=2,delta=1,noexec
+    41                           	psect	nvFARRAM,class=FARRAM,space=0,reloc=2,delta=1,noexec
+    42                           	psect	fardata,class=FARRAM,space=0,reloc=2,delta=1,noexec
+    43                           	psect	ifardata,class=CODE,space=0,reloc=2,delta=1,noexec
+    44                           
+    45                           	psect	reset_vec,class=CODE,delta=1,reloc=2
+    46                           	psect	powerup,class=CODE,delta=1,reloc=2
+    47                           	psect	init,class=CODE,delta=1,reloc=2
+    48                           	psect	text,class=CODE,delta=1,reloc=2
+    49                           GLOBAL	intlevel0,intlevel1,intlevel2
+    50                           intlevel0:
+    51  000000                     intlevel1:
+    52  000000                     intlevel2:
+    53  000000                     GLOBAL	intlevel3
+    54                           intlevel3:
+    55  000000                     	psect	clrtext,class=CODE,delta=1,reloc=2
+    56                           
+    57                           	psect	intcode,class=CODE,delta=1,reloc=2
+    58                           	psect	intcode_body,class=CODE,delta=1,reloc=2
+    59                           	psect	intcodelo,class=CODE,delta=1,reloc=2
+    60                           	psect	intret,class=CODE,delta=1,reloc=2
+    61                           	psect	intentry,class=CODE,delta=1,reloc=2
+    62                           	psect	intsave_regs,class=BIGRAM,space=1
+    63                           
+    64                           	psect	eeprom_data,class=EEDATA,delta=1,noexec
+    65                           	psect	smallconst
+    66                           	GLOBAL	__smallconst
+    67                           __smallconst:
+    68  000000                     	psect	mediumconst
+    69                           	GLOBAL	__mediumconst
+    70                           __mediumconst:
+    71  007E00                     wreg	EQU	0FE8h
+    72  0000                     fsr0l	EQU	0FE9h
+    73  0000                     fsr0h	EQU	0FEAh
+    74  0000                     fsr1l	EQU	0FE1h
+    75  0000                     fsr1h	EQU	0FE2h
+    76  0000                     fsr2l	EQU	0FD9h
+    77  0000                     fsr2h	EQU	0FDAh
+    78  0000                     postinc0	EQU	0FEEh
+    79  0000                     postdec0	EQU	0FEDh
+    80  0000                     postinc1	EQU	0FE6h
+    81  0000                     postdec1	EQU	0FE5h
+    82  0000                     postinc2	EQU	0FDEh
+    83  0000                     postdec2	EQU	0FDDh
+    84  0000                     tblptrl	EQU	0FF6h
+    85  0000                     tblptrh	EQU	0FF7h
+    86  0000                     tblptru	EQU	0FF8h
+    87  0000                     tablat		EQU	0FF5h
+    88  0000                     
+    89                           	PSECT	ramtop,class=RAM,noexec
+    90                           	GLOBAL	__S1			; top of RAM usage
+    91                           	GLOBAL	__ramtop
+    92                           	GLOBAL	__LRAM,__HRAM
+    93                           __ramtop:
+    94  000600                     
+    95                           	psect	reset_vec
+    96                           reset_vec:
+    97  000000                     	; No powerup routine
+    98                           	global start
+    99                           
+   100                           ; jump to start
+   101                           	goto start
+   102  000000  EF32  F000         	GLOBAL __accesstop
+   103                           __accesstop EQU 96
+   104  0000                     
+   105                           ;Initialize the stack pointer (FSR1)
+   106                           	global stacklo, stackhi
+   107                           	stacklo	equ	060h
+   108  0000                     	stackhi	equ	05FFh
+   109  0000                     
+   110                           
+   111                           	psect	stack,class=STACK,space=2,noexec
+   112                           	global ___sp,___inthi_sp,___intlo_sp
+   113                           ___sp:
+   114  000000                     ___inthi_sp:
+   115  000000                     ___intlo_sp:
+   116  000000                     
+   117                           
+   118                           
+   119                           	psect	init
+   120                           start:
+   121  000064                     	global start_initialization
+   122                           	goto start_initialization	;jump to C runtime clear & initialization
+   123  000064  EF49  F002         
+   124                           ; Padding undefined space
+   125                           	psect	config,class=CONFIG,delta=1,noexec
+   126                           		org 0x0
+   127  300000                     		db 0xFF
+   128  300000  FF                 
+   129                           ; Config register CONFIG1H @ 0x300001
+   130                           ;	Oscillator Selection bits
+   131                           ;	FOSC = HSHP, HS oscillator (high power > 16 MHz)
+   132                           ;	4X PLL Enable
+   133                           ;	PLLCFG = OFF, Oscillator used directly
+   134                           ;	Primary clock enable bit
+   135                           ;	PRICLKEN = OFF, Primary clock can be disabled by software
+   136                           ;	Fail-Safe Clock Monitor Enable bit
+   137                           ;	FCMEN = OFF, Fail-Safe Clock Monitor disabled
+   138                           ;	Internal/External Oscillator Switchover bit
+   139                           ;	IESO = OFF, Oscillator Switchover mode disabled
+   140                           
+   141                           	psect	config,class=CONFIG,delta=1,noexec
+   142                           		org 0x1
+   143  300001                     		db 0x2
+   144  300001  02                 
+   145                           ; Config register CONFIG2L @ 0x300002
+   146                           ;	Power-up Timer Enable bit
+   147                           ;	PWRTEN = OFF, Power up timer disabled
+   148                           ;	Brown-out Reset Enable bits
+   149                           ;	BOREN = OFF, Brown-out Reset disabled in hardware and software
+   150                           ;	Brown Out Reset Voltage bits
+   151                           ;	BORV = 190, VBOR set to 1.90 V nominal
+   152                           
+   153                           	psect	config,class=CONFIG,delta=1,noexec
+   154                           		org 0x2
+   155  300002                     		db 0x19
+   156  300002  19                 
+   157                           ; Config register CONFIG2H @ 0x300003
+   158                           ;	Watchdog Timer Enable bits
+   159                           ;	WDTEN = OFF, Watch dog timer is always disabled. SWDTEN has no effect.
+   160                           ;	Watchdog Timer Postscale Select bits
+   161                           ;	WDTPS = 1, 1:1
+   162                           
+   163                           	psect	config,class=CONFIG,delta=1,noexec
+   164                           		org 0x3
+   165  300003                     		db 0x0
+   166  300003  00                 
+   167                           ; Padding undefined space
+   168                           	psect	config,class=CONFIG,delta=1,noexec
+   169                           		org 0x4
+   170  300004                     		db 0xFF
+   171  300004  FF                 
+   172                           ; Config register CONFIG3H @ 0x300005
+   173                           ;	CCP2 MUX bit
+   174                           ;	CCP2MX = PORTC1, CCP2 input/output is multiplexed with RC1
+   175                           ;	PORTB A/D Enable bit
+   176                           ;	PBADEN = OFF, PORTB<5:0> pins are configured as digital I/O on Reset
+   177                           ;	P3A/CCP3 Mux bit
+   178                           ;	CCP3MX = PORTB5, P3A/CCP3 input/output is multiplexed with RB5
+   179                           ;	HFINTOSC Fast Start-up
+   180                           ;	HFOFST = OFF, HFINTOSC output and ready status are delayed by the oscillator stable status
+   181                           ;	Timer3 Clock input mux bit
+   182                           ;	T3CMX = PORTB5, T3CKI is on RB5
+   183                           ;	ECCP2 B output mux bit
+   184                           ;	P2BMX = 0x1, unprogrammed default
+   185                           ;	MCLR Pin Enable bit
+   186                           ;	MCLRE = EXTMCLR, MCLR pin enabled, RE3 input pin disabled
+   187                           
+   188                           	psect	config,class=CONFIG,delta=1,noexec
+   189                           		org 0x5
+   190  300005                     		db 0xA5
+   191  300005  A5                 
+   192                           ; Config register CONFIG4L @ 0x300006
+   193                           ;	Stack Full/Underflow Reset Enable bit
+   194                           ;	STVREN = OFF, Stack full/underflow will not cause Reset
+   195                           ;	Single-Supply ICSP Enable bit
+   196                           ;	LVP = OFF, Single-Supply ICSP disabled
+   197                           ;	Extended Instruction Set Enable bit
+   198                           ;	XINST = OFF, Instruction set extension and Indexed Addressing mode disabled (Legacy mode)
+   199                           ;	Background Debug
+   200                           ;	DEBUG = 0x1, unprogrammed default
+   201                           
+   202                           	psect	config,class=CONFIG,delta=1,noexec
+   203                           		org 0x6
+   204  300006                     		db 0x80
+   205  300006  80                 
+   206                           ; Padding undefined space
+   207                           	psect	config,class=CONFIG,delta=1,noexec
+   208                           		org 0x7
+   209  300007                     		db 0xFF
+   210  300007  FF                 
+   211                           ; Config register CONFIG5L @ 0x300008
+   212                           ;	Code Protection Block 0
+   213                           ;	CP0 = OFF, Block 0 (000800-001FFFh) not code-protected
+   214                           ;	Code Protection Block 1
+   215                           ;	CP1 = OFF, Block 1 (002000-003FFFh) not code-protected
+   216                           ;	Code Protection Block 2
+   217                           ;	CP2 = OFF, Block 2 (004000-005FFFh) not code-protected
+   218                           ;	Code Protection Block 3
+   219                           ;	CP3 = OFF, Block 3 (006000-007FFFh) not code-protected
+   220                           
+   221                           	psect	config,class=CONFIG,delta=1,noexec
+   222                           		org 0x8
+   223  300008                     		db 0xF
+   224  300008  0F                 
+   225                           ; Config register CONFIG5H @ 0x300009
+   226                           ;	Boot Block Code Protection bit
+   227                           ;	CPB = OFF, Boot block (000000-0007FFh) not code-protected
+   228                           ;	Data EEPROM Code Protection bit
+   229                           ;	CPD = OFF, Data EEPROM not code-protected
+   230                           
+   231                           	psect	config,class=CONFIG,delta=1,noexec
+   232                           		org 0x9
+   233  300009                     		db 0xC0
+   234  300009  C0                 
+   235                           ; Config register CONFIG6L @ 0x30000A
+   236                           ;	Write Protection Block 0
+   237                           ;	WRT0 = OFF, Block 0 (000800-001FFFh) not write-protected
+   238                           ;	Write Protection Block 1
+   239                           ;	WRT1 = OFF, Block 1 (002000-003FFFh) not write-protected
+   240                           ;	Write Protection Block 2
+   241                           ;	WRT2 = OFF, Block 2 (004000-005FFFh) not write-protected
+   242                           ;	Write Protection Block 3
+   243                           ;	WRT3 = OFF, Block 3 (006000-007FFFh) not write-protected
+   244                           
+   245                           	psect	config,class=CONFIG,delta=1,noexec
+   246                           		org 0xA
+   247  30000A                     		db 0xF
+   248  30000A  0F                 
+   249                           ; Config register CONFIG6H @ 0x30000B
+   250                           ;	Configuration Register Write Protection bit
+   251                           ;	WRTC = OFF, Configuration registers (300000-3000FFh) not write-protected
+   252                           ;	Boot Block Write Protection bit
+   253                           ;	WRTB = OFF, Boot Block (000000-0007FFh) not write-protected
+   254                           ;	Data EEPROM Write Protection bit
+   255                           ;	WRTD = OFF, Data EEPROM not write-protected
+   256                           
+   257                           	psect	config,class=CONFIG,delta=1,noexec
+   258                           		org 0xB
+   259  30000B                     		db 0xE0
+   260  30000B  E0                 
+   261                           ; Config register CONFIG7L @ 0x30000C
+   262                           ;	Table Read Protection Block 0
+   263                           ;	EBTR0 = OFF, Block 0 (000800-001FFFh) not protected from table reads executed in other blocks
+   264                           ;	Table Read Protection Block 1
+   265                           ;	EBTR1 = OFF, Block 1 (002000-003FFFh) not protected from table reads executed in other blocks
+   266                           ;	Table Read Protection Block 2
+   267                           ;	EBTR2 = OFF, Block 2 (004000-005FFFh) not protected from table reads executed in other blocks
+   268                           ;	Table Read Protection Block 3
+   269                           ;	EBTR3 = OFF, Block 3 (006000-007FFFh) not protected from table reads executed in other blocks
+   270                           
+   271                           	psect	config,class=CONFIG,delta=1,noexec
+   272                           		org 0xC
+   273  30000C                     		db 0xF
+   274  30000C  0F                 
+   275                           ; Config register CONFIG7H @ 0x30000D
+   276                           ;	Boot Block Table Read Protection bit
+   277                           ;	EBTRB = OFF, Boot Block (000000-0007FFh) not protected from table reads executed in other blocks
+   278                           
+   279                           	psect	config,class=CONFIG,delta=1,noexec
+   280                           		org 0xD
+   281  30000D                     		db 0x40
+   282  30000D  40                 
+
+
+Microchip Technology PIC18 Macro Assembler V2.00 build -1524193055 
+Symbol Table                                                                                               Sun Dec 09 12:06:00 2018
+
+                __S1 0027                 ___sp 0000                 _main 0166                 start 0064  
+              __HRAM 0000                __LRAM 0001         __mediumconst 7E00               stackhi 0005FF  
+             stacklo 000060           __accesstop 000060           ___inthi_sp 0000           ___intlo_sp 0000  
+            __ramtop 0600  start_initialization 0492          __smallconst 0000             intlevel0 0000  
+           intlevel1 0000             intlevel2 0000             intlevel3 0000             reset_vec 0000  

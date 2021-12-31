@@ -1,0 +1,1 @@
+ RUTINE~1.d  RUTINE~1.p1:  ../rutines_GLCD.c ../GLCD.h ../ascii.h
