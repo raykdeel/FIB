@@ -1,0 +1,297 @@
+\hypertarget{class_cjt__salas}{}\section{Referencia de la Clase Cjt\+\_\+salas}
+\label{class_cjt__salas}\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+
+
+Representa un conjunto de salas.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_cjt__salas_ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8}{poner\+\_\+items} (int iden\+\_\+sala, string iden\+\_\+prod, int uni\+\_\+prod)
+\begin{DoxyCompactList}\small\item\em Añade varias unidades de un producto a la sala. \end{DoxyCompactList}\item 
+int \hyperlink{class_cjt__salas_acd5d8368e51d7bbd557958063c81cc43}{quitar\+\_\+items} (int iden\+\_\+sala, string iden\+\_\+prod, int uni\+\_\+prod)
+\begin{DoxyCompactList}\small\item\em Quita varios productos de la sala. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__salas_a1ecd0e8e0ae84290c354447e2a305e80}{compactar} (int iden\+\_\+sala)
+\begin{DoxyCompactList}\small\item\em Compacta una estanteria. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__salas_a540d49e9ee9a7a078e18f610399335b6}{reorganizar} (int iden\+\_\+sala)
+\begin{DoxyCompactList}\small\item\em Reorganiza una estanteria. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__salas_af4a9c609def322edba117ae76aa0b3b9}{redimensionar} (int iden\+\_\+sala, int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em Compacta una estanteria. \end{DoxyCompactList}\item 
+string \hyperlink{class_cjt__salas_a7e06b122fbbee58f24b8938bc2975b16}{consultar\+\_\+pos} (int iden\+\_\+sala, int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em Consultora de un producto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__salas_ae79acb3461bd487e7bda3af42a3f96b7}{leer} (int num\+\_\+sala)
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__salas_a184f3ef5d7857c7f76ecef58b093f252}{escribir} (int iden\+\_\+sala)
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_sala}{Sala} $>$ \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\+\_\+salas}
+\begin{DoxyCompactList}\small\item\em Vector que representa el conjunto de salas del almacen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un conjunto de salas. 
+
+Puede contener las diferentes salas de un almacen con las caracteristicas de cada sala 
+
+Definición en la línea 20 del archivo Cjt\+\_\+salas.\+hh.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt__salas_ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8}\label{class_cjt__salas_ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!poner\+\_\+items@{poner\+\_\+items}}
+\index{poner\+\_\+items@{poner\+\_\+items}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{poner\+\_\+items()}{poner\_items()}}
+{\footnotesize\ttfamily int Cjt\+\_\+salas\+::poner\+\_\+items (\begin{DoxyParamCaption}\item[{int}]{iden\+\_\+sala,  }\item[{string}]{iden\+\_\+prod,  }\item[{int}]{uni\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Añade varias unidades de un producto a la sala. 
+
+Se introduce un identificador de sala, un identificador de producto y una cantidad. Si el producto no existe se produce un error. Se colocan tantas unidades como quepan en la sala y se devuelve un entero que indique cuantas unidades no han cabido. Se colocaran las unidades lo antes posible, es decir, primero se rellenan los huecos a partir del hueco que vaya antes. Las unidades que no quepan no se guardan en el almacen. \begin{DoxyPrecond}{Precondición}
+1$<$=iden\+\_\+sala$<$=n iden\+\_\+prod$>$0 uni\+\_\+prod$>$0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a contener sus productos originales más las unidades añadidas 
+\end{DoxyPostcond}
+
+
+Definición en la línea 8 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+9 \{ \textcolor{comment}{//falta mirar si el producto existe y actualizar el inventario }
+10   
+11   \textcolor{keywordflow}{return} \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].poner\_items\_sala(iden\_prod,uni\_prod);
+12 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__salas_acd5d8368e51d7bbd557958063c81cc43}\label{class_cjt__salas_acd5d8368e51d7bbd557958063c81cc43}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!quitar\+\_\+items@{quitar\+\_\+items}}
+\index{quitar\+\_\+items@{quitar\+\_\+items}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{quitar\+\_\+items()}{quitar\_items()}}
+{\footnotesize\ttfamily int Cjt\+\_\+salas\+::quitar\+\_\+items (\begin{DoxyParamCaption}\item[{int}]{iden\+\_\+sala,  }\item[{string}]{iden\+\_\+prod,  }\item[{int}]{uni\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Quita varios productos de la sala. 
+
+Se introduce un identificador de sala, un identificador de producto y una cantidad. Si el producto no existe se produce un error. Se quitan tantas unidades como se pueda y se devuelve un entero que indique cuantas unidades no se han podido quitar porque no habia suficientes en la sala. Se comenzara quitando las unidades que vayan antes. \begin{DoxyPrecond}{Precondición}
+1$<$=iden\+\_\+sala$<$=n iden\+\_\+prod$>$0 uni\+\_\+prod$>$0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a contener sus productos originales más p 
+\end{DoxyPostcond}
+
+
+Definición en la línea 14 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+15 \{ \textcolor{comment}{//falta mirar si el producto existe}
+16 
+17   \textcolor{keywordflow}{return} \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].quitar\_items\_sala(iden\_prod,uni\_prod);
+18   
+19 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__salas_a1ecd0e8e0ae84290c354447e2a305e80}\label{class_cjt__salas_a1ecd0e8e0ae84290c354447e2a305e80}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!compactar@{compactar}}
+\index{compactar@{compactar}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{compactar()}{compactar()}}
+{\footnotesize\ttfamily void Cjt\+\_\+salas\+::compactar (\begin{DoxyParamCaption}\item[{int}]{iden\+\_\+sala }\end{DoxyParamCaption})}
+
+
+
+Compacta una estanteria. 
+
+Se introduce un identificador de sala y se compacta su estanteria. \begin{DoxyPrecond}{Precondición}
+1$<$=iden\+\_\+sala$<$=n 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La estanteria queda compactada. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 22 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+23 \{
+24 
+25     \textcolor{keywordtype}{int} fil=\hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].consultar\_filas(), col=\hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].
+      consultar\_columnas();
+26     \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].cambiar\_estanteria(fil,col); \textcolor{comment}{//si redimensionamos la sala con las
+       mismas medidas}
+27     \textcolor{comment}{//el resultado es la sala compactada}
+28  
+29 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__salas_a540d49e9ee9a7a078e18f610399335b6}\label{class_cjt__salas_a540d49e9ee9a7a078e18f610399335b6}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!reorganizar@{reorganizar}}
+\index{reorganizar@{reorganizar}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{reorganizar()}{reorganizar()}}
+{\footnotesize\ttfamily void Cjt\+\_\+salas\+::reorganizar (\begin{DoxyParamCaption}\item[{int}]{iden\+\_\+sala }\end{DoxyParamCaption})}
+
+
+
+Reorganiza una estanteria. 
+
+Se introduce un identificador de sala y se reorganiza su estanteria. \begin{DoxyPrecond}{Precondición}
+1$<$=iden\+\_\+sala$<$=n 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La estanteria queda reorganizada. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 31 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+32 \{
+33   \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].reorganizar();
+34   
+35 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__salas_af4a9c609def322edba117ae76aa0b3b9}\label{class_cjt__salas_af4a9c609def322edba117ae76aa0b3b9}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!redimensionar@{redimensionar}}
+\index{redimensionar@{redimensionar}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{redimensionar()}{redimensionar()}}
+{\footnotesize\ttfamily void Cjt\+\_\+salas\+::redimensionar (\begin{DoxyParamCaption}\item[{int}]{iden\+\_\+sala,  }\item[{int}]{filas,  }\item[{int}]{columnas }\end{DoxyParamCaption})}
+
+
+
+Compacta una estanteria. 
+
+Se introduce un identificador de sala y el nuevo numero de filas y el nuevo numero de columnas. Si los productos que hay en la sala no caben en las nuevas dimensiones se produce un error. En caso contrario se compacta la estanteria y pasa a tener las nuevas dimensiones. \begin{DoxyPrecond}{Precondición}
+1$<$=iden\+\_\+sala$<$=n num\+\_\+fil$>$0 num\+\_\+col$>$0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se compacta la estanteria y pasa a tener las nuevas dimensiones 
+\end{DoxyPostcond}
+
+
+Definición en la línea 37 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+38 \{
+39   
+40   \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].cambiar\_estanteria(filas, columnas);
+41 
+42 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__salas_a7e06b122fbbee58f24b8938bc2975b16}\label{class_cjt__salas_a7e06b122fbbee58f24b8938bc2975b16}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!consultar\+\_\+pos@{consultar\+\_\+pos}}
+\index{consultar\+\_\+pos@{consultar\+\_\+pos}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{consultar\+\_\+pos()}{consultar\_pos()}}
+{\footnotesize\ttfamily string Cjt\+\_\+salas\+::consultar\+\_\+pos (\begin{DoxyParamCaption}\item[{int}]{iden\+\_\+sala,  }\item[{int}]{filas,  }\item[{int}]{columnas }\end{DoxyParamCaption})}
+
+
+
+Consultora de un producto. 
+
+Se introduce un identificador de sala y una posicion de la estanteria \begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se indica que producto hay en la posicion correspondiente de la estanteria de dicha sala, si no hay producto se escribe N\+U\+LL 
+\end{DoxyPostcond}
+
+
+Definición en la línea 44 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+45 \{
+46   
+47   \textcolor{keywordflow}{return} \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].consultar\_producto(filas, columnas);
+48   
+49 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__salas_ae79acb3461bd487e7bda3af42a3f96b7}\label{class_cjt__salas_ae79acb3461bd487e7bda3af42a3f96b7}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!leer@{leer}}
+\index{leer@{leer}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily void Cjt\+\_\+salas\+::leer (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+sala }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+Por orden de identificador de sala se leeran las dimensiones (filas, columnas) de la estanteria de cada sala \begin{DoxyPrecond}{Precondición}
+En el canal estandard de entrada estan preparados dos enteros (filas,columnas) y sabemos que pertenecen a las dimensioned de la sala \char`\"{}iden\+\_\+sala\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parametro implicito pasa a tener los atributos leidos en el canal estandard de entrada, si los enteros son negativos da error 
+\end{DoxyPostcond}
+
+
+Definición en la línea 51 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+52 \{
+53   \hyperlink{class_sala}{Sala} aux;
+54   vector<Sala> vec\_aux(num\_sala);
+55   \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}=vec\_aux;
+56   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<num\_sala;i++)\{
+57     aux.\hyperlink{class_sala_abbb0194559de617baeed1e4b444ed2b2}{leer}();
+58     \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[i]=aux; \textcolor{comment}{// lee las medidas de las estanterias por odren}
+59   \}
+60   
+61   
+62 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__salas_a184f3ef5d7857c7f76ecef58b093f252}\label{class_cjt__salas_a184f3ef5d7857c7f76ecef58b093f252}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!escribir@{escribir}}
+\index{escribir@{escribir}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void Cjt\+\_\+salas\+::escribir (\begin{DoxyParamCaption}\item[{int}]{iden\+\_\+sala }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+Se introduce un identificador de sala. Se escribe el contenido de la estanteria de arriba a abajo y de izquierda a derecha. En los huecos escribiremos N\+U\+LL y por tanto no podra ser un identificador valido de producto. Tambien escribiremos cuantas unidades hay en total y por orden de identificador de producto existente en la estanteria, escribiremos el identificador de producto y su cantidad. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escribe el contenido del parámetro implícito por el canal estándar de salida 
+\end{DoxyPostcond}
+
+
+Definición en la línea 64 del archivo Cjt\+\_\+salas.\+cc.
+
+
+\begin{DoxyCode}
+65 \{
+66   \hyperlink{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}{vec\_salas}[iden\_sala-1].escribir();
+67   
+68 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}\label{class_cjt__salas_a3f130cc8bab35f449de8be69283af09e}} 
+\index{Cjt\+\_\+salas@{Cjt\+\_\+salas}!vec\+\_\+salas@{vec\+\_\+salas}}
+\index{vec\+\_\+salas@{vec\+\_\+salas}!Cjt\+\_\+salas@{Cjt\+\_\+salas}}
+\subsubsection{\texorpdfstring{vec\+\_\+salas}{vec\_salas}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_sala}{Sala}$>$ Cjt\+\_\+salas\+::vec\+\_\+salas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector que representa el conjunto de salas del almacen. 
+
+
+
+Definición en la línea 126 del archivo Cjt\+\_\+salas.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt__salas_8hh}{Cjt\+\_\+salas.\+hh}\item 
+\hyperlink{_cjt__salas_8cc}{Cjt\+\_\+salas.\+cc}\end{DoxyCompactItemize}

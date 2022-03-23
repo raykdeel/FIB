@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X90633 Control - Torn 1 (Primavera 2015): Fitxer de Codi Cjt_estudiants.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">X90633 Control - Torn 1 (Primavera 2015)
+   &#160;<span id="projectnumber">Ricard Guixaró Trancho</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_estudiants.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt__estudiants_8hh.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef CONJ_EST_HH</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define CONJ_EST_HH</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_estudiant_8hh.html">Estudiant.hh</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM </span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_cjt__estudiants.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt__estudiants.html">Cjt_estudiants</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  vector&lt;Estudiant&gt; vest;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">int</span> nest; </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_NEST = 20;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">int</span> nest_amb_nota;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">double</span> suma_notes;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> ordenar_cjt_estudiants();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;     </div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> cerca_dicot(<span class="keyword">const</span> vector&lt;Estudiant&gt; &amp;vest, <span class="keywordtype">int</span> left, <span class="keywordtype">int</span> right, <span class="keywordtype">int</span> x);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">//Constructores</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_cjt__estudiants.html#a31ffe72cadcf58d82c8b9f6659c56e7a">Cjt_estudiants</a>();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">//Modificadores</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   </div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__estudiants.html#a4188715904e017fa15b9ad8bc63112b6">afegir_estudiant</a>(<span class="keyword">const</span> <a class="code" href="class_estudiant.html">Estudiant</a> &amp;est, <span class="keywordtype">bool</span>&amp; b);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__estudiants.html#a6632e0cecaa9d698cb51da07c9e58402">esborrar_estudiant</a>(<span class="keywordtype">int</span> dni, <span class="keywordtype">bool</span>&amp; b);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">//Consultores</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_cjt__estudiants.html#a87c69704a0eff48a301cfff05e6dd587">mida</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_cjt__estudiants.html#a171fdff58b408ccbf647ab594b5eafa4">mida_maxima</a>();</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  </div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_cjt__estudiants.html#a8c8099d5080864a677743e5e1d1bbdf8">mitjana_estudiants_amb_nota</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// Lectura i escriptura</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  </div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__estudiants.html#aa24c2d4c36167b2b810ab459435b67a8">llegir</a>();</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__estudiants.html#a2c25dbd33850025de3389617712f896a">escriure</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_estudiant_html"><div class="ttname"><a href="class_estudiant.html">Estudiant</a></div><div class="ttdoc">Representa un estudiant amb DNI i la possibilitat de tenir nota. </div><div class="ttdef"><b>Definition:</b> <a href="_estudiant_8hh_source.html#l00020">Estudiant.hh:20</a></div></div>
+<div class="ttc" id="class_cjt__estudiants_html"><div class="ttname"><a href="class_cjt__estudiants.html">Cjt_estudiants</a></div><div class="ttdoc">Representa un conjunt d&amp;#39;estudiants ordenat per DNI. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estudiants_8hh_source.html#l00018">Cjt_estudiants.hh:18</a></div></div>
+<div class="ttc" id="_estudiant_8hh_html"><div class="ttname"><a href="_estudiant_8hh.html">Estudiant.hh</a></div><div class="ttdoc">Especificació de la classe Estudiant. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_a171fdff58b408ccbf647ab594b5eafa4"><div class="ttname"><a href="class_cjt__estudiants.html#a171fdff58b408ccbf647ab594b5eafa4">Cjt_estudiants::mida_maxima</a></div><div class="ttdeci">static int mida_maxima()</div><div class="ttdoc">Consultora de la mida màxima d&amp;#39;un conjunt. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_a8c8099d5080864a677743e5e1d1bbdf8"><div class="ttname"><a href="class_cjt__estudiants.html#a8c8099d5080864a677743e5e1d1bbdf8">Cjt_estudiants::mitjana_estudiants_amb_nota</a></div><div class="ttdeci">double mitjana_estudiants_amb_nota() const</div><div class="ttdoc">Consulta de la mitjana dels estudiants amb nota d&amp;#39;un conjunt. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_a4188715904e017fa15b9ad8bc63112b6"><div class="ttname"><a href="class_cjt__estudiants.html#a4188715904e017fa15b9ad8bc63112b6">Cjt_estudiants::afegir_estudiant</a></div><div class="ttdeci">void afegir_estudiant(const Estudiant &amp;est, bool &amp;b)</div><div class="ttdoc">Afegir un estudiant a un conjunt. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_a2c25dbd33850025de3389617712f896a"><div class="ttname"><a href="class_cjt__estudiants.html#a2c25dbd33850025de3389617712f896a">Cjt_estudiants::escriure</a></div><div class="ttdeci">void escriure() const</div><div class="ttdoc">Escriptura d&amp;#39;un conjunt d&amp;#39;estudiants. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_aa24c2d4c36167b2b810ab459435b67a8"><div class="ttname"><a href="class_cjt__estudiants.html#aa24c2d4c36167b2b810ab459435b67a8">Cjt_estudiants::llegir</a></div><div class="ttdeci">void llegir()</div><div class="ttdoc">Lectura d&amp;#39;un conjunt d&amp;#39;estudiants. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_a31ffe72cadcf58d82c8b9f6659c56e7a"><div class="ttname"><a href="class_cjt__estudiants.html#a31ffe72cadcf58d82c8b9f6659c56e7a">Cjt_estudiants::Cjt_estudiants</a></div><div class="ttdeci">Cjt_estudiants()</div><div class="ttdoc">Creadora per defecte. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_a87c69704a0eff48a301cfff05e6dd587"><div class="ttname"><a href="class_cjt__estudiants.html#a87c69704a0eff48a301cfff05e6dd587">Cjt_estudiants::mida</a></div><div class="ttdeci">int mida() const</div><div class="ttdoc">Mida d&amp;#39;un conjunt. </div></div>
+<div class="ttc" id="class_cjt__estudiants_html_a6632e0cecaa9d698cb51da07c9e58402"><div class="ttname"><a href="class_cjt__estudiants.html#a6632e0cecaa9d698cb51da07c9e58402">Cjt_estudiants::esborrar_estudiant</a></div><div class="ttdeci">void esborrar_estudiant(int dni, bool &amp;b)</div><div class="ttdoc">Esborrar un estudiant d&amp;#39;un conjunt. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

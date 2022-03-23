@@ -1,0 +1,250 @@
+\hypertarget{class_cluster}{}\section{Referència de la Classe Cluster}
+\label{class_cluster}\index{Cluster@{Cluster}}
+
+
+Representa un cluster format per un idcluster i \hyperlink{class_bin_tree}{Bin\+Tree}.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}{Cluster} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\hyperlink{class_cluster_a816d3dca3b1b678a28af2d31e8fc7e65}{Cluster} (string id, double x)
+\begin{DoxyCompactList}\small\item\em Copiadora per defecte. \end{DoxyCompactList}\item 
+\hyperlink{class_cluster_a0f3bcdf573567f07c610400996faa89f}{Cluster} (\hyperlink{class_bin_tree}{Bin\+Tree}$<$ string $>$ aux)
+\item 
+void \hyperlink{class_cluster_a6b25af7d4f702db942878dba136fe0c2}{clusters\+\_\+fusion} (const \hyperlink{class_cluster}{Cluster} \&A, const \hyperlink{class_cluster}{Cluster} \&B, string a, double x)
+\begin{DoxyCompactList}\small\item\em Fusió de dos clusters. \end{DoxyCompactList}\item 
+\hyperlink{class_bin_tree}{Bin\+Tree}$<$ pair$<$ string, double $>$ $>$ \hyperlink{class_cluster_ac29060dfec64d073f740f7408ecabbbe}{query\+\_\+tree} () const
+\begin{DoxyCompactList}\small\item\em Consulta de l\textquotesingle{}arbre d\textquotesingle{}un cluster. \end{DoxyCompactList}\item 
+string \hyperlink{class_cluster_a7e077596f7eb4f2bdf2847d65fa37654}{query\+\_\+cluster\+\_\+id} () const
+\begin{DoxyCompactList}\small\item\em Consulta de la mida d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+void \hyperlink{class_cluster_adc8ff607dd745107b5b6a454ac196e55}{print\+\_\+tree} (const \hyperlink{class_bin_tree}{Bin\+Tree}$<$ pair$<$ string, double $>$$>$ \&a)
+\begin{DoxyCompactList}\small\item\em Escriptura d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+pair$<$ string, string $>$ \hyperlink{class_cluster_ae8c8a1d94203dccfd6fbbc5389a1e0ec}{query\+\_\+cluster\+\_\+sub\+\_\+id} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa un cluster format per un idcluster i \hyperlink{class_bin_tree}{Bin\+Tree}. 
+
+Conté l\textquotesingle{}identificador del cluster i un \hyperlink{class_bin_tree}{Bin\+Tree} d\textquotesingle{}espècies anomenat arbre. 
+
+Definició a la línia 19 del fitxer Cluster.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}\label{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+S\textquotesingle{}executa automàticament al declarar un cluster.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és un cluster amb un idcluster i un arbre buits. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 10 del fitxer Cluster.\+cc.
+
+
+\begin{DoxyCode}
+10                  \{
+11 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cluster_a816d3dca3b1b678a28af2d31e8fc7e65}\label{class_cluster_a816d3dca3b1b678a28af2d31e8fc7e65}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Copiadora per defecte. 
+
+S\textquotesingle{}introdueix un arbre i retorna un cluster.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és un cluster amb l\textquotesingle{}arbre donat pel paràmetre. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 13 del fitxer Cluster.\+cc.
+
+
+\begin{DoxyCode}
+13                                     \{
+14     pair<string, double> y;
+15     y.first = id;
+16     y.second = x;
+17     tree = \hyperlink{class_bin_tree}{BinTree<pair<string, double>}> (y);
+18 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cluster_a0f3bcdf573567f07c610400996faa89f}\label{class_cluster_a0f3bcdf573567f07c610400996faa89f}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{\hyperlink{class_bin_tree}{Bin\+Tree}$<$ string $>$}]{aux }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_cluster_a6b25af7d4f702db942878dba136fe0c2}\label{class_cluster_a6b25af7d4f702db942878dba136fe0c2}} 
+\index{Cluster@{Cluster}!clusters\+\_\+fusion@{clusters\+\_\+fusion}}
+\index{clusters\+\_\+fusion@{clusters\+\_\+fusion}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{clusters\+\_\+fusion()}{clusters\_fusion()}}
+{\footnotesize\ttfamily void Cluster\+::clusters\+\_\+fusion (\begin{DoxyParamCaption}\item[{const \hyperlink{class_cluster}{Cluster} \&}]{A,  }\item[{const \hyperlink{class_cluster}{Cluster} \&}]{B,  }\item[{string}]{a,  }\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Fusió de dos clusters. 
+
+Fusió de dos clusters en un de nou.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un nou cluster amb el cluster A com a fill esquerra, i l\textquotesingle{}arbre B com a fill dret i li assigna l\textquotesingle{}espècie donada. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 22 del fitxer Cluster.\+cc.
+
+
+\begin{DoxyCode}
+22                                                                                     \{
+23     pair<string, double> y(a, x);
+24     tree = \hyperlink{class_bin_tree}{BinTree<pair<string, double>} > (y, A.tree, B.tree);
+25 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cluster_ac29060dfec64d073f740f7408ecabbbe}\label{class_cluster_ac29060dfec64d073f740f7408ecabbbe}} 
+\index{Cluster@{Cluster}!query\+\_\+tree@{query\+\_\+tree}}
+\index{query\+\_\+tree@{query\+\_\+tree}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{query\+\_\+tree()}{query\_tree()}}
+{\footnotesize\ttfamily \hyperlink{class_bin_tree}{Bin\+Tree}$<$ pair$<$ string, double $>$ $>$ Cluster\+::query\+\_\+tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta de l\textquotesingle{}arbre d\textquotesingle{}un cluster. 
+
+Retorna l\textquotesingle{}arbre del paràmetre implícit tree.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és l\textquotesingle{}arbre del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 29 del fitxer Cluster.\+cc.
+
+
+\begin{DoxyCode}
+29                                                         \{
+30     \textcolor{keywordflow}{return} tree;
+31 \} \textcolor{comment}{//return string ---------}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cluster_a7e077596f7eb4f2bdf2847d65fa37654}\label{class_cluster_a7e077596f7eb4f2bdf2847d65fa37654}} 
+\index{Cluster@{Cluster}!query\+\_\+cluster\+\_\+id@{query\+\_\+cluster\+\_\+id}}
+\index{query\+\_\+cluster\+\_\+id@{query\+\_\+cluster\+\_\+id}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{query\+\_\+cluster\+\_\+id()}{query\_cluster\_id()}}
+{\footnotesize\ttfamily string Cluster\+::query\+\_\+cluster\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta de la mida d\textquotesingle{}un arbre. 
+
+Retorna la mida de l\textquotesingle{}arbre.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és el nombre de nodes de l\textquotesingle{}arbre del paràmetre implícit. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 46 del fitxer Cluster.\+cc.
+
+
+\begin{DoxyCode}
+46                                        \{
+47     \textcolor{keywordflow}{return} tree.\hyperlink{class_bin_tree_a734e785b089c87b49187ee7c58edf5f3}{value}().first;
+48 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cluster_adc8ff607dd745107b5b6a454ac196e55}\label{class_cluster_adc8ff607dd745107b5b6a454ac196e55}} 
+\index{Cluster@{Cluster}!print\+\_\+tree@{print\+\_\+tree}}
+\index{print\+\_\+tree@{print\+\_\+tree}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{print\+\_\+tree()}{print\_tree()}}
+{\footnotesize\ttfamily void Cluster\+::print\+\_\+tree (\begin{DoxyParamCaption}\item[{const \hyperlink{class_bin_tree}{Bin\+Tree}$<$ pair$<$ string, double $>$$>$ \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Escriptura d\textquotesingle{}un arbre. 
+
+Imprimeix l\textquotesingle{}estructura de l\textquotesingle{}arbre del paràmetre i en cas que l\textquotesingle{}arbre tingui un fill dret i un fill esquerra, també escriu la distància que hi havia entre els dos fills (anteriorment clusters).
+
+\begin{DoxyPrecond}{Precondició}
+El cluster al qual pertany l\textquotesingle{}identificador del paràmetre existeix. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Imprimeix l\textquotesingle{}estructura de l\textquotesingle{}arbre del paràmetre. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 33 del fitxer Cluster.\+cc.
+
+
+\begin{DoxyCode}
+33                                                               \{
+34     cout << \textcolor{stringliteral}{"["};
+35     \textcolor{keywordtype}{string} \textcolor{keywordtype}{id} = a.\hyperlink{class_bin_tree_a734e785b089c87b49187ee7c58edf5f3}{value}().first;
+36     \textcolor{keywordtype}{double} dist = a.\hyperlink{class_bin_tree_a734e785b089c87b49187ee7c58edf5f3}{value}().second;
+37     \textcolor{keywordflow}{if} (not a.\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}().\hyperlink{class_bin_tree_a74cda259ba5c25b8ee38ed4dc33e4fad}{empty}() and not a.\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}().\hyperlink{class_bin_tree_a74cda259ba5c25b8ee38ed4dc33e4fad}{empty}()) \{
+38         cout << \textcolor{stringliteral}{"("} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{", "};
+39         cout << dist << \textcolor{stringliteral}{") "};
+40         \hyperlink{class_cluster_adc8ff607dd745107b5b6a454ac196e55}{print\_tree}(a.\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}());
+41         \hyperlink{class_cluster_adc8ff607dd745107b5b6a454ac196e55}{print\_tree}(a.\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}());
+42         cout << \textcolor{stringliteral}{"]"};
+43     \} \textcolor{keywordflow}{else} cout << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{"]"};;
+44 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cluster_ae8c8a1d94203dccfd6fbbc5389a1e0ec}\label{class_cluster_ae8c8a1d94203dccfd6fbbc5389a1e0ec}} 
+\index{Cluster@{Cluster}!query\+\_\+cluster\+\_\+sub\+\_\+id@{query\+\_\+cluster\+\_\+sub\+\_\+id}}
+\index{query\+\_\+cluster\+\_\+sub\+\_\+id@{query\+\_\+cluster\+\_\+sub\+\_\+id}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{query\+\_\+cluster\+\_\+sub\+\_\+id()}{query\_cluster\_sub\_id()}}
+{\footnotesize\ttfamily pair$<$ string, string $>$ Cluster\+::query\+\_\+cluster\+\_\+sub\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definició a la línia 50 del fitxer Cluster.\+cc.
+
+
+\begin{DoxyCode}
+50                                                          \{
+51     \textcolor{keywordflow}{return} pair<string, string> (tree.\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}().\hyperlink{class_bin_tree_a734e785b089c87b49187ee7c58edf5f3}{value}().first, tree.\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}().
+      \hyperlink{class_bin_tree_a734e785b089c87b49187ee7c58edf5f3}{value}().first);
+52 \}
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cluster_8hh}{Cluster.\+hh}\item 
+\hyperlink{_cluster_8cc}{Cluster.\+cc}\end{DoxyCompactItemize}

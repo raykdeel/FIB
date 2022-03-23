@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://jutge.org/problems/X99804_ca/submissions/S001 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jutge.org - X99804_ca - Mitjanes selectives 2</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    </head><body><nonolink href="/bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Awesome Fonts -->
+    <link href="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/font-awesome.min.css" rel="stylesheet">
+
+    <!-- tabdrop CSS -->
+    <link href="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/tabdrop.css" rel="stylesheet">
+
+    
+                <!-- pygmentize CSS -->
+                <style>
+                    
+                </style>
+            
+                <!-- Datatables CSS -->
+                <link href="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/dataTables.bootstrap.min.css" rel="stylesheet">
+            
+
+    <!-- Our CSS (last) -->
+    <link href="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/style.css" rel="stylesheet" type="text/css">
+
+    <!-- The xajax script -->
+    
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+try { if (undefined == xajax.config) xajax.config = {}; } catch (e) { xajax = {}; xajax.config = {}; };
+xajax.config.requestURI = "https://jutge.org/problems/X99804_ca/submissions/S001";
+xajax.config.statusMessages = false;
+xajax.config.waitCursor = true;
+xajax.config.version = "xajax 0.5";
+xajax.config.defaultMode = "asynchronous";
+xajax.config.defaultMethod = "POST";
+xajax.config.JavaScriptURI = "/js/xajax/";
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/xajax_core.js.download" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+window.setTimeout(
+ function() {
+  var scriptExists = false;
+  try { if (xajax.isLoaded) scriptExists = true; }
+  catch (e) {}
+  if (!scriptExists) {
+   alert("Error: the xajax Javascript component could not be included. Perhaps the URL is incorrect?\nURL: /js/xajax/xajax_js/xajax_core.js");
+  }
+ }, 2000);
+/* ]]> */
+</script>
+
+
+    
+
+
+
+
+
+    
+
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container" style="">
+
+                    <div class="hidden-xs">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li></li>
+                            
+                        <li>
+                            <a href="https://jutge.org/dashboard" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Dashboard&lt;/h4&gt;"><i class="fa fa-dashboard fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li class="active">
+                            <a href="https://jutge.org/problems" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Problems&lt;/h4&gt;"><i style="color: white; font-size: 125%;" class="fa fa-puzzle-piece fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://jutge.org/submissions" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Submissions&lt;/h4&gt;"><i class="fa fa-send-o fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://jutge.org/exams" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Exams&lt;/h4&gt;"><i class="fa fa-edit fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://jutge.org/competitions" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Competitions&lt;/h4&gt;"><i class="fa fa-trophy fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://jutge.org/courses" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Courses&lt;/h4&gt;"><i class="fa fa-table fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://ide.jutge.org/" target="blank_" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Online IDE&lt;/h4&gt;"><i class="fa fa-bug fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://jutge.org/profile" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Profile&lt;/h4&gt;"><i class="fa fa-user fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://jutge.org/documentation" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;Documentation&lt;/h4&gt;"><i class="fa fa-file-text fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="https://jutge.org/about" data-toggle="tooltip" data-placement="bottom" title="" data-html="true" data-original-title="&lt;h4&gt;About Jutge.org&lt;/h4&gt;"><i class="fa fa-info-circle fa-fw"></i></a>
+                            
+                        </li>
+                    
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="https://jutge.org/problems/X99804_ca/submissions/S001#">
+                        <span class="hidden-xs">
+                            Ricard Guixaró
+                        </span>
+                        <i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+            <li class="text-center">
+                <a href="https://jutge.org/profile">
+                    <img src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/image" alt="Current image" class="img-rounded" style="height: 12ex;">
+                </a>
+            </li>
+        
+                        <li class="divider"></li>
+                        
+            <li>
+                <a href="https://jutge.org/profile">
+                    <i class="fa fa-user fa-fw"></i> Profile
+                </a>
+            </li>
+        
+                        
+            <li>
+                <a href="https://jutge.org/dashboard">
+                    <i class="fa fa-dashboard fa-fw"></i> Dashboard
+                </a>
+            </li>
+        
+                        <li class="divider"></li>
+                        
+            <li>
+                <a href="https://jutge.org/sign-out">
+                    <i class="fa fa-sign-out fa-fw"></i> Sign out
+                </a>
+            </li>
+        
+                    
+                    </ul>
+                </li>
+            
+                        </ul>
+                    </div>
+
+
+                    <div class="visible-xs">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="https://jutge.org/problems/X99804_ca/submissions/S001#">
+                                    &nbsp; <i class="fa fa-reorder fa-fw"></i> Jutge.org
+                                </a>
+                                <ul class="dropdown-menu">
+                                    
+                    <li>
+                        <a href="https://jutge.org/dashboard"><i class="fa fa-dashboard fa-fw"></i> &nbsp; Dashboard</a>
+                    </li>
+                
+                    <li class="active">
+                        <a href="https://jutge.org/problems"><i class="fa fa-puzzle-piece fa-fw"></i> &nbsp; Problems</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/submissions"><i class="fa fa-send-o fa-fw"></i> &nbsp; Submissions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/exams"><i class="fa fa-edit fa-fw"></i> &nbsp; Exams</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/competitions"><i class="fa fa-trophy fa-fw"></i> &nbsp; Competitions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/courses"><i class="fa fa-table fa-fw"></i> &nbsp; Courses</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/https://ide.jutge.org"><i class="fa fa-bug fa-fw"></i> &nbsp; Online IDE</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/profile"><i class="fa fa-user fa-fw"></i> &nbsp; Profile</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/documentation"><i class="fa fa-file-text fa-fw"></i> &nbsp; Documentation</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jutge.org/about"><i class="fa fa-info-circle fa-fw"></i> &nbsp; About Jutge.org</a>
+                    </li>
+                
+                <li class="divider"></li>
+                <li>
+                    <a href="https://jutge.org/sign-out"><i class="fa fa-sign-out fa-fw"></i> &nbsp; Sign out</a>
+                </li>
+            
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </nav>
+
+
+            <div style="min-height: 720px;">
+                <div class="container">
+                    <div class="row">
+                        
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                    <div class="row">
+                        
+            <h1 class="my-trim">
+                <a style="color: inherit;" title="Problems" href="https://jutge.org/problems"><i class="fa fa-fw fa-puzzle-piece"></i></a>
+             Mitjanes selectives 2
+            <small class="pull-right">
+                X99804 
+            </small>
+            </h1>
+        
+                    </div>
+                    <div class="row">
+                        
+                    <!-- the tabs -->
+                        <ul class="nav nav-tabs nono-nav-justified"><li class="dropdown pull-right tabdrop hide"><a class="dropdown-toggle" data-toggle="dropdown" href="https://jutge.org/problems/X99804_ca/submissions/S001#"><i class="icon-align-justify"></i> <b class="caret"></b></a><ul class="dropdown-menu"></ul></li>
+                            <li role="presentation" class=""><a href="https://jutge.org/problems/X99804_ca/statement">Statement</a></li>
+<li role="presentation" class=" active"><a href="https://jutge.org/problems/X99804_ca/submissions"><b>Submissions</b></a></li>
+
+                        </ul>
+                        <br>
+                
+                    </div>
+                    <div class="row">
+                        
+        
+        
+
+        <div class="row equal">
+            <div class="col-sm-6">
+                
+        <div class="panel panel-default" style="height: 209px;">
+            <div class="panel-heading">
+                Submission S001
+            </div>
+            <div class="panel-body">
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <img src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/sign-green.png">
+                        </td>
+                        <td>
+                            <table class="result-table">
+                                
+        <tbody><tr>
+            <th class="pull-right">Verdict</th>
+            <td>
+            <a href="https://jutge.org/problems/X99804_ca/submissions/S001#" title="" data-content="
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td valign=&#39;top&#39;&gt;
+                        &lt;img src = &#39;/ico/sign-green.png&#39;/&gt;
+                    &lt;/td&gt;
+                    &lt;td style=&#39;width: 20px;&#39;&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;p&gt;
+                            
+                        Your program seems correct.
+                        That is, your program did not crash with any test case
+                        (either public or private),
+                        it was fast enough compared to the Jutge&#39;s solution,
+                        and its output for every case always matched
+                        the output of the Jutge&#39;s solution.
+                        For most problems,
+                        the match must be strict,
+                        although a few statements concede some flexibility.
+                    
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            
+                            &lt;a class=&#39;btn btn-default btn-sm&#39; href=&#39;/documentation/verdicts&#39;&gt;&lt;i class=&#39;fa fa-file-text&#39;&gt;&lt;/i&gt;  Verdicts&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        " data-html="true" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-original-title="&lt;b&gt;AC: Accepted&lt;/b&gt;">Accepted</a>
+        </td>
+        </tr>
+    
+                                
+        <tr>
+            <th class="pull-right">Compiler</th>
+            <td>
+            <a href="https://jutge.org/problems/X99804_ca/submissions/S001#" title="" data-content="
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td valign=&#39;top&#39;&gt;
+                        &lt;i class=&#39;fa fa-code fa-fw fa-5x&#39;&gt;&lt;/i&gt;
+                    &lt;/td&gt;
+                    &lt;td style=&#39;width: 20px;&#39;&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;td valign=&#39;top&#39;&gt;&lt;div style=&#39;margin-right: 10px;&#39; class=&#39;pull-right&#39;&gt;&lt;b&gt;Compiler&lt;/b&gt;&lt;/td&gt;
+                                &lt;td valign=&#39;top&#39;&gt;PRO2&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td valign=&#39;top&#39;&gt;&lt;div style=&#39;margin-right: 10px;&#39; class=&#39;pull-right&#39;&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;
+                                &lt;td valign=&#39;top&#39;&gt;C++&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td valign=&#39;top&#39;&gt;&lt;div style=&#39;margin-right: 10px;&#39; class=&#39;pull-right&#39;&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;
+                                &lt;td valign=&#39;top&#39;&gt;PRO2 - GNU C++ Compiler&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td valign=&#39;top&#39;&gt;&lt;div style=&#39;margin-right: 10px;&#39; class=&#39;pull-right&#39;&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;
+                                &lt;td valign=&#39;top&#39;&gt;g++ (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td valign=&#39;top&#39;&gt;&lt;div style=&#39;margin-right: 10px;&#39; class=&#39;pull-right&#39;&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;
+                                &lt;td valign=&#39;top&#39;&gt;
+                &lt;img src=&#39;/ico/green-bullet.png&#39;/&gt; Ok
+            &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                        &lt;p&gt;&lt;/p&gt;
+                        &lt;p&gt;
+                            
+                            &lt;a class=&#39;btn btn-default btn-sm&#39; href=&#39;/documentation/compilers/PRO2&#39;&gt;&lt;i class=&#39;fa fa-file-text&#39;&gt;&lt;/i&gt;  Compilers&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        " data-html="true" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-original-title="&lt;b&gt;PRO2&lt;/b&gt;">PRO2</a> </td>
+        </tr>
+    
+                                
+                                
+                                
+            <tr>
+                <th class="pull-right">Time</th>
+                <td>2020-02-27 21:04:16</td>
+            </tr>
+        
+                                
+                                
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    
+            </div>
+            <div class="col-sm-6">
+                
+        <div class="panel panel-default" style="height: 209px;">
+            <div class="panel-heading">
+                New submission
+            </div>
+            <div class="panel-body">
+                
+                <form class="form-horizontal" action="https://jutge.org/problems/X99804_ca/submissions" method="post" role="form" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label for="file" class="sr-only">Source file</label>
+                        <div class="col-sm-12">
+                            <input name="file" type="file" class="filestyle input-sm" data-buttonbefore="false" data-buttonname="btn-primary" data-buttontext=" Select file" data-size="sm" id="filestyle-0" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);"><div class="bootstrap-filestyle input-group"><input type="text" class="form-control input-sm" disabled=""> <span class="group-span-filestyle input-group-btn" tabindex="0"><label for="filestyle-0" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-folder-open"></span> &nbsp;Select file</label></span></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="compiler_id" class="sr-only">Compiler</label>
+                        <div class="col-sm-12">
+                            <input type="input" name="annotation" class="form-control input-sm" placeholder="Some annotation" maxlength="60">
+                        </div>
+                    </div>
+                
+
+                    <div class="form-group">
+                        <label for="annotation" class="sr-only">Annotation</label>
+                        <div class="col-sm-8">
+                            <select class="form-control input-sm" id="compiler_id" name="compiler_id">
+                                
+                    <option value="PRO2">PRO2</option>
+                
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <input name="token_uid" type="hidden" value="4f986944cb7d1b0444e0660084abd37fa6bac6b3e0ef0f13d04f64ab2a111ed2d4c0bbf8e6017ffc7c27aa478a0543ff6ee13b4a26515d52fd758de5b770b5ad">
+                            <button id="submit" name="submit" type="btn" class="btn btn-block btn-primary btn-sm btn-center"><i class="fa fa-send-o fa-fw"></i> &nbsp; Submit!</button>
+                        </div>
+                    </div>
+                </form>
+            
+            </div>
+        </div>
+    
+            </div>
+        </div>
+
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Certificate
+
+                <div class="pull-right" style="position: relative; margin-top: -7px; margin-bottom: -20px;">
+                    <a href="https://jutge.org/documentation/certificates" class="btn btn-default" title="Help">
+                        <i class="fa fa-info-circle fa-fw"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="panel-body">
+                <p>
+                    <a href="https://jutge.org/problems/X99804_ca/submissions/S001/certificate"><img src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/certificate.png" title="Download certificate"></a>
+                </p>
+            </div>
+        </div>
+    
+        
+        
+        
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Analysis
+                </div>
+                <div class="panel-body">
+                    <table class="result-table">
+                        <thead>
+                            <tr>
+                                <th>Test case</th>
+                                <th>Execution</th>
+                                <th colspan="2">Verdict</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                <tr>
+                    <td><a href="https://jutge.org/problems/X99804_ca/submissions/S001/diffs/sample">sample</a></td>
+                    <td>OK</td>
+                    <td>AC</td>
+                    <td></td>
+            </tr>
+            
+                <tr>
+                    <td>private</td>
+                    <td>OK</td>
+                    <td>AC</td>
+                    <td></td>
+                </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    
+        Program
+
+        <div class="pull-right" style="position: relative; margin-top: -7px; margin-bottom: -20px;">
+
+            <a href="https://jutge.org/problems/X99804_ca/submissions/S001/download" class="btn btn-default" title="Download">
+                <i class="fa fa-download fa-fw"></i>
+            </a>
+            &nbsp;
+            <a href="https://jutge.org/problems/X99804_ca/submissions/S001/program" class="btn btn-default" title="Expand">
+                <i class="fa fa-expand fa-fw"></i>
+            </a>
+
+        </div>
+    
+                </div>
+                <div class="panel-body" style="padding: 0px;">
+                    
+            <style>
+                td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+body .c { color: #408080; font-style: italic } /* Comment */
+body .err { border: 1px solid #FF0000 } /* Error */
+body .k { color: #008000; font-weight: bold } /* Keyword */
+body .o { color: #666666 } /* Operator */
+body .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+body .cp { color: #BC7A00 } /* Comment.Preproc */
+body .c1 { color: #408080; font-style: italic } /* Comment.Single */
+body .cs { color: #408080; font-style: italic } /* Comment.Special */
+body .gd { color: #A00000 } /* Generic.Deleted */
+body .ge { font-style: italic } /* Generic.Emph */
+body .gr { color: #FF0000 } /* Generic.Error */
+body .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+body .gi { color: #00A000 } /* Generic.Inserted */
+body .go { color: #808080 } /* Generic.Output */
+body .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+body .gs { font-weight: bold } /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+body .gt { color: #0040D0 } /* Generic.Traceback */
+body .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+body .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+body .kp { color: #008000 } /* Keyword.Pseudo */
+body .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+body .kt { color: #B00040 } /* Keyword.Type */
+body .m { color: #666666 } /* Literal.Number */
+body .s { color: #BA2121 } /* Literal.String */
+body .na { color: #7D9029 } /* Name.Attribute */
+body .nb { color: #008000 } /* Name.Builtin */
+body .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+body .no { color: #880000 } /* Name.Constant */
+body .nd { color: #AA22FF } /* Name.Decorator */
+body .ni { color: #999999; font-weight: bold } /* Name.Entity */
+body .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+body .nf { color: #0000FF } /* Name.Function */
+body .nl { color: #A0A000 } /* Name.Label */
+body .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+body .nt { color: #008000; font-weight: bold } /* Name.Tag */
+body .nv { color: #19177C } /* Name.Variable */
+body .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+body .w { color: #bbbbbb } /* Text.Whitespace */
+body .mf { color: #666666 } /* Literal.Number.Float */
+body .mh { color: #666666 } /* Literal.Number.Hex */
+body .mi { color: #666666 } /* Literal.Number.Integer */
+body .mo { color: #666666 } /* Literal.Number.Oct */
+body .sb { color: #BA2121 } /* Literal.String.Backtick */
+body .sc { color: #BA2121 } /* Literal.String.Char */
+body .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+body .s2 { color: #BA2121 } /* Literal.String.Double */
+body .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+body .sh { color: #BA2121 } /* Literal.String.Heredoc */
+body .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+body .sx { color: #008000 } /* Literal.String.Other */
+body .sr { color: #BB6688 } /* Literal.String.Regex */
+body .s1 { color: #BA2121 } /* Literal.String.Single */
+body .ss { color: #19177C } /* Literal.String.Symbol */
+body .bp { color: #008000 } /* Name.Builtin.Pseudo */
+body .vc { color: #19177C } /* Name.Variable.Class */
+body .vg { color: #19177C } /* Name.Variable.Global */
+body .vi { color: #19177C } /* Name.Variable.Instance */
+body .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+            </style>
+            <div class="highlight"><pre class="pre-white no-border" style="max-height: 25em;; overflow: auto; font-size: 90%;"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"Estudiant.hh"</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">bool</span> <span class="nf">cmp</span><span class="p">(</span><span class="k">const</span> <span class="n">Estudiant</span><span class="o">&amp;</span> <span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">Estudiant</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">consultar_nota</span><span class="p">()</span> <span class="o">==</span> <span class="n">b</span><span class="p">.</span><span class="n">consultar_nota</span><span class="p">())</span> <span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">consultar_DNI</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">.</span><span class="n">consultar_DNI</span><span class="p">();</span>
+	<span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">consultar_nota</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">.</span><span class="n">consultar_nota</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kt">int</span> <span class="n">n_est</span><span class="p">,</span> <span class="n">n_assig</span><span class="p">,</span> <span class="n">sel_assig</span><span class="p">;</span>
+	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n_est</span> <span class="o">&gt;&gt;</span> <span class="n">n_assig</span> <span class="o">&gt;&gt;</span> <span class="n">sel_assig</span><span class="p">;</span>
+
+	<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">assig_num</span><span class="p">(</span><span class="n">sel_assig</span><span class="p">);</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">sel_assig</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">assig_num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+
+	<span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">assig_marks</span><span class="p">(</span><span class="n">n_assig</span><span class="p">);</span>
+	<span class="n">vector</span><span class="o">&lt;</span><span class="n">Estudiant</span><span class="o">&gt;</span> <span class="n">est</span><span class="p">(</span><span class="n">n_est</span><span class="p">);</span>
+	<span class="kt">int</span> <span class="n">DNI</span><span class="p">;</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n_est</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">DNI</span><span class="p">;</span>
+
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n_assig</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">assig_marks</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+
+		<span class="kt">double</span> <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">sel_assig</span><span class="p">;</span> <span class="o">++</span><span class="n">k</span><span class="p">)</span> <span class="n">res</span> <span class="o">+=</span> <span class="n">assig_marks</span><span class="p">[</span><span class="n">assig_num</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+		<span class="n">res</span> <span class="o">/=</span> <span class="n">sel_assig</span><span class="p">;</span>
+
+		<span class="n">est</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">Estudiant</span> <span class="p">(</span><span class="n">DNI</span><span class="p">);</span>
+		<span class="n">est</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">afegir_nota</span><span class="p">(</span><span class="n">res</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="n">sort</span><span class="p">(</span><span class="n">est</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">est</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">cmp</span><span class="p">);</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n_est</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="n">est</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">escriure</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+
+
+        
+                </div>
+            </div>
+        
+        
+    
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <footer style="color: #a0a0a0; background: black; margin-top: 24px; ">
+                <div class="container" style="padding: 18px 0px;">
+                    <p>
+                    <b>Jutge.org</b>
+                    <br>
+                    The Virtual Learning Environment for Computer Programming
+                    </p>
+                    <p>
+                    © Jordi Petit and Salvador Roura, 2006-2020
+                    </p><p>
+                </p></div>
+            </footer>
+        
+
+
+    <!-- jQuery -->
+    <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/jquery.min.js.download"></script>
+    <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/jquery.cookie.js.download"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/bootstrap.min.js.download"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/jquery.dataTables.min.js.download"></script>
+    <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/dataTables.bootstrap.min.js.download"></script>
+
+    <!-- tabdrop js -->
+    <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/bootstrap-tabdrop.min.js.download"></script>
+
+    
+                <!-- Moment JavaScript -->
+                <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/moment.min.js.download"></script>
+            
+                <!-- Datatables JavaScript -->
+                <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/dataTables.bootstrap.min.js(1).download"></script>
+            
+                <!-- filestyle JavaScript -->
+                <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/bootstrap-filestyle.js.download" type="text/javascript"></script>
+            
+                <!-- Match height JS -->
+                <script src="./Jutge.org - X99804_ca - Mitjanes selectives 22_files/jquery.matchHeight-min.js.download"></script>
+            
+
+    <!-- our JavaScript -->
+    <script>
+
+        $.cookie.json = true;
+
+        $(document).ready(function() {
+            $('[data-toggle=popover]').popover();
+            $('[data-toggle=tooltip]').tooltip();
+
+            $('.nav-pills, .nav-tabs').tabdrop();
+        });
+
+        
+                $(document).ready(function() {
+                    $('.table-extra').DataTable({
+                        'paging':       false,
+                        'searching':    false,
+                        'ordering':     true,
+                        'info':         false
+                    });
+                    $('.table-complete').DataTable({
+                        'paging':       true,
+                        'searching':    true,
+                        'ordering':     true,
+                        'info':         true,
+                        'pageLength':   25
+                    });
+                });
+
+                
+            
+
+        $(document).ready(function() {
+            
+                $('.equal .panel').matchHeight();
+            
+        });
+
+    </script>
+
+
+
+
+        </nonolink></body></html>

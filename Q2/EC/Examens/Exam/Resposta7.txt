@@ -1,0 +1,29 @@
+NOM I COGNOMS:Ricard Guixa´ro Trancho
+
+FITXER DE RESPOSTES A LA PREGUNTA 7
+
+a) Codifica en simple precisió el número x = 1,25 * 2^(-126), i expressa el resultat en hexadecimal
+
+       x = 0x
+	
+b) Suposem ara que calculem y = x / 4,0. Es pot expressar y en format normalitzat?
+
+       S/N? 
+   
+   Codifica el resultat exacte en format denormal
+   
+       y = 0x
+   
+c) Escriu en hexadecimal els següents números en el format de simple precisió
+
+       Número positiu amb menor valor absolut = 0x
+
+       Número (no infinit) més gran possible  = 0x
+	
+d) (en una sola frase breu) Quin avantatge comporta representar l’exponent dels números en coma flotant en el format “en excés” en comptes de “en complement a 2”?
+
+Si ordenem les cadenes de bits de menor a major com a enters, també en serveixen com a naturals, fet que no succeeix amb Ca2.
+	
+e)  (en una sola frase breu) A què és degut que la suma de números en coma flotant no tingui la propietat associativa?
+
+Els resultats poden variar depenent del nombre de processadors en què s’ha dividit l’execució.

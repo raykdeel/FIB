@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica (Primavera 2020): Fitxer de Codi Especie.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica (Primavera 2020)
+   &#160;<span id="projectnumber">Ricard Guixaró Trancho</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Especie.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_especie_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_especie_8hh.html">Especie.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//CONSTRUCTORES</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_especie.html#a272c2488719cc9874b2f174906675b3d">    9</a></span>&#160;<a class="code" href="class_especie.html#a272c2488719cc9874b2f174906675b3d">Especie::Especie</a>() {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_especie.html#a00df4e464c347052383d92d310f68791">   12</a></span>&#160;<a class="code" href="class_especie.html#a272c2488719cc9874b2f174906675b3d">Especie::Especie</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> g, <span class="keywordtype">int</span> k) {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    identifier = id;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    gene = g;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    kmer = create_kmer(gene, k);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//MODIFICADORES</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_especie.html#a7e6c7615ab5458259c1f20bcd68ebd80">   20</a></span>&#160;map&lt;string, int&gt; <a class="code" href="class_especie.html#a7e6c7615ab5458259c1f20bcd68ebd80">Especie::create_kmer</a>(<span class="keywordtype">string</span> g, <span class="keywordtype">int</span> k) {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    map&lt;string, int&gt; aux;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> max = g.length() - k + 1;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    vector&lt;string&gt; v(max);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; max; ++j) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = j; i &lt; k; ++i) {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            v[j] += g[i];</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        } </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ++k;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    map&lt;string, int&gt;::const_iterator it1;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; max; ++i) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">string</span> s = v[i];</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;       it1 = aux.find(s);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;       <span class="keywordflow">if</span> (it1 == aux.end()) aux.insert(make_pair(s, 1));</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;       <span class="keywordflow">else</span> aux[s] = it1-&gt;second + 1;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> aux;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//CONSULTORES</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_especie.html#acfce0335ac5432dc681c2931b7986ace">   42</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_especie.html#acfce0335ac5432dc681c2931b7986ace">Especie::query_identifier</a>()<span class="keyword"> const</span>{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> identifier;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_especie.html#a0781a594e45e036c0b59d161a7ebd8f3">   46</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_especie.html#a0781a594e45e036c0b59d161a7ebd8f3">Especie::query_gene</a>()<span class="keyword"> const</span>{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> gene;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_especie.html#ab446000c51668cabe39fb2b72ed5fff0">   50</a></span>&#160;map&lt;string, int&gt; <a class="code" href="class_especie.html#ab446000c51668cabe39fb2b72ed5fff0">Especie::query_kmer</a>() {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> kmer;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//LECTURA</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_especie.html#a1a60c5306ae621527bb9183a5c64583f">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_especie.html#a1a60c5306ae621527bb9183a5c64583f">Especie::read_single_species</a>(<span class="keywordtype">int</span> k) {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    cin &gt;&gt; identifier &gt;&gt; gene;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    kmer = create_kmer(gene, k);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_especie_html_ab446000c51668cabe39fb2b72ed5fff0"><div class="ttname"><a href="class_especie.html#ab446000c51668cabe39fb2b72ed5fff0">Especie::query_kmer</a></div><div class="ttdeci">map&lt; string, int &gt; query_kmer()</div><div class="ttdoc">Consulta del kmer de l&amp;#39;espècie. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00050">Especie.cc:50</a></div></div>
+<div class="ttc" id="class_especie_html_a0781a594e45e036c0b59d161a7ebd8f3"><div class="ttname"><a href="class_especie.html#a0781a594e45e036c0b59d161a7ebd8f3">Especie::query_gene</a></div><div class="ttdeci">string query_gene() const</div><div class="ttdoc">Consulta del gen d&amp;#39;una espècie. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00046">Especie.cc:46</a></div></div>
+<div class="ttc" id="class_especie_html_a1a60c5306ae621527bb9183a5c64583f"><div class="ttname"><a href="class_especie.html#a1a60c5306ae621527bb9183a5c64583f">Especie::read_single_species</a></div><div class="ttdeci">void read_single_species(int k)</div><div class="ttdoc">Lectura d&amp;#39;una espècie. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00056">Especie.cc:56</a></div></div>
+<div class="ttc" id="_especie_8hh_html"><div class="ttname"><a href="_especie_8hh.html">Especie.hh</a></div><div class="ttdoc">Especificació de la classe Especie. </div></div>
+<div class="ttc" id="class_especie_html_a272c2488719cc9874b2f174906675b3d"><div class="ttname"><a href="class_especie.html#a272c2488719cc9874b2f174906675b3d">Especie::Especie</a></div><div class="ttdeci">Especie()</div><div class="ttdoc">Map de les distancies d&amp;#39;un cluster a la resta. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00009">Especie.cc:9</a></div></div>
+<div class="ttc" id="class_especie_html_a7e6c7615ab5458259c1f20bcd68ebd80"><div class="ttname"><a href="class_especie.html#a7e6c7615ab5458259c1f20bcd68ebd80">Especie::create_kmer</a></div><div class="ttdeci">map&lt; string, int &gt; create_kmer(string g, int k)</div><div class="ttdoc">Conjunt de subseqüències contigües de g de longitud k. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00020">Especie.cc:20</a></div></div>
+<div class="ttc" id="class_especie_html_acfce0335ac5432dc681c2931b7986ace"><div class="ttname"><a href="class_especie.html#acfce0335ac5432dc681c2931b7986ace">Especie::query_identifier</a></div><div class="ttdeci">string query_identifier() const</div><div class="ttdoc">Consulta de l&amp;#39;identificador d&amp;#39;una espècie. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00042">Especie.cc:42</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

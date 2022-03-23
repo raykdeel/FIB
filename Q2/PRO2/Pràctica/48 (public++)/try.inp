@@ -1,0 +1,45 @@
+3
+
+lee_cjt_especies
+0
+
+inicializa_clusters
+
+ejecuta_paso_wpgma
+
+imprime_arbol_filogenetico
+
+lee_cjt_especies
+16
+e    TACACCATTAACCGGTGGGG
+b    GCAACCTTTGTGGGCGCAGT
+g    CGGTGGGGGCAACCTTTGTG
+a    AAAAGATGACCAGCGTAATG
+c    ACGATTTGCGTAAGCTATGT
+h    TTTTTTTTTTTTTTTTTTTT
+f    TTTTTTTTTTTTGGGTTATG
+i    GGGTTAAATTTTTTTTTTTT
+j    TTTTGGGTTTAAATTTTTTT
+k    GGGTTTTAAAAAATTTTTTT
+l    ATGGTTGGGTTTTTTTTTTT
+m    GGTTGGGTTTTTTTTTTATG
+n    GGGTTTTTTTTATGGGTTGG
+o    TACATTAATAACCGGTGGGG
+p    CATTAATAACCGGTTACGGG
+q    GCAATTTGTACCGGGCGCGG
+
+inicializa_clusters
+
+ejecuta_paso_wpgma
+
+ejecuta_paso_wpgma
+
+ejecuta_paso_wpgma
+
+ejecuta_paso_wpgma
+
+ejecuta_paso_wpgma
+
+ejecuta_paso_wpgma
+
+imprime_arbol_filogenetico

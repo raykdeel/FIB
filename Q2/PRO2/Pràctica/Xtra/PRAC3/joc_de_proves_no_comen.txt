@@ -1,0 +1,64 @@
+5
+1 2 3 0 0 4 0 0 5 0 0
+3 2
+4 3
+2 5
+5 6
+1 2
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+inventario
+compactar 1  
+escribir 1
+reorganizar 1 
+escribir 1
+quitar_prod aa1 
+poner_prod aa1
+inventario 
+quitar_items 4 aa1 5 
+poner_items 2 aa1 3
+inventario  
+consultar_prod aa1 
+consultar_pos 2 4 2 
+consultar_pos 2 4 1
+quitar_items 2 aa1 1   
+compactar 2 
+escribir 2
+poner_prod bb2
+poner_items 2 bb2 8
+inventario 
+escribir 2
+quitar_items 2 bb2 5
+escribir 2 
+poner_prod cc3
+quitar_prod cc3 
+inventario      
+poner_prod cc3
+poner_items 2 cc3 4
+consultar_pos 2 2 2  
+consultar_pos 2 3 1
+consultar_pos 2 2 3
+escribir 2
+compactar 2  
+escribir 2
+reorganizar 2 
+escribir 2  
+reorganitzar 2  
+poner_prod dd4
+distribuir dd4 17 
+escribir 1 
+redimensionar 1 2 3 
+redimensionar 1 1 1 
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+inventario
+poner_prod dd4  
+consultar_pos 4 4 5
+consultar_prod dd4
+fin

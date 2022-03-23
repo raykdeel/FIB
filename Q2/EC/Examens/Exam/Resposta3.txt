@@ -1,0 +1,13 @@
+NOM I COGNOMS:
+
+FITXER DE RESPOSTES A LA PREGUNTA 3
+
+A) Troba els valors de X i Y que fan correcta la traducció
+
+   X = 0
+   Y = 95
+   
+B) Descriu breument els càlculs que has fet per trobar la solució
+
+   Calculant i*NC*T + j*T = 380, sabent que T = 4 i NC = 15, s'arriba a una eq de 2 variables, que per substitució s'arriba a x = 0, y = 95
+

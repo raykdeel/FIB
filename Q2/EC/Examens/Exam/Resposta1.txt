@@ -1,0 +1,27 @@
+NOM I COGNOMS: Ricard Guixaró Trancho
+
+FITXER DE RESPOSTES A LA PREGUNTA 1
+
+Indica nombre d'instruccions i de cicles per cada tipus d'instrucció:
+
+- Salts que salten
+  Instruccions: 101
+  Cicles: 303
+
+- Salts que no salten
+  Instruccions: 1
+  Cicles: 2
+
+- Load/store
+  Instruccions: 100
+  Cicles: 1000
+
+- Les altres
+  Instruccions: 503	
+  Cicles: 503
+
+Indica la durada total, en cicles i en nanosegons
+
+  Total cicles: 1808
+  Total temps (ns): 904x10^-9
+

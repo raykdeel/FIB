@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laboratorio de PRO2. Gestion de un almacen: Fichero Fuente Sala.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio de PRO2. Gestion de un almacen
+   &#160;<span id="projectnumber">v5.0 26-05-2018</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sala.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sala_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _SALA_HH_</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _SALA_HH_</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM </span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_sala.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sala.html">Sala</a></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">//Modificadoras</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> cambiar_estanteria(<span class="keywordtype">int</span> fn, <span class="keywordtype">int</span> cn);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">int</span> poner_items_sala(<span class="keywordtype">string</span> iden_prod, <span class="keywordtype">int</span> uni_prod) ;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">int</span> quitar_items_sala(<span class="keywordtype">string</span> iden_prod, <span class="keywordtype">int</span> uni_prod);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> reorganizar ();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//Consultoras</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> consultar_filas();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">int</span> consultar_columnas();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">string</span> consultar_producto(<span class="keywordtype">int</span> filas, <span class="keywordtype">int</span> columnas);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// Lectura i escritura de una sala</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> leer();</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">void</span> escribir();</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_sala.html#a4cccb03763eea3ebd6d192491b25f7dc">  120</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sala.html#a4cccb03763eea3ebd6d192491b25f7dc">filas</a>;</div><div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_sala.html#af3c278931f26e28e77fa363e9be82000">  122</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sala.html#af3c278931f26e28e77fa363e9be82000">columnas</a>;</div><div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_sala.html#a88aae17b7e590770fe8115b41da2e26a">  124</a></span>&#160;    vector&lt; vector &lt;string&gt; &gt; <a class="code" href="class_sala.html#a88aae17b7e590770fe8115b41da2e26a">estanterias</a>;</div><div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_sala.html#a1ee09851cf1735dc48ab69a91952e250">  126</a></span>&#160;    map&lt;string, int&gt; <a class="code" href="class_sala.html#a1ee09851cf1735dc48ab69a91952e250">map_prod_sala</a>;</div><div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_sala.html#a1cc789ab041a9e3011f9eec9357e8fb0">  128</a></span>&#160;    map&lt;string, int&gt;::iterator <a class="code" href="class_sala.html#a1cc789ab041a9e3011f9eec9357e8fb0">it</a>;</div><div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_sala.html#aeb64df257f47ad63fe1ba3b163255e14">  130</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sala.html#aeb64df257f47ad63fe1ba3b163255e14">total_prod</a>;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_sala_html_af3c278931f26e28e77fa363e9be82000"><div class="ttname"><a href="class_sala.html#af3c278931f26e28e77fa363e9be82000">Sala::columnas</a></div><div class="ttdeci">int columnas</div><div class="ttdoc">Columnas de la estanteria. </div><div class="ttdef"><b>Definition:</b> <a href="_sala_8hh_source.html#l00122">Sala.hh:122</a></div></div>
+<div class="ttc" id="class_sala_html_a1cc789ab041a9e3011f9eec9357e8fb0"><div class="ttname"><a href="class_sala.html#a1cc789ab041a9e3011f9eec9357e8fb0">Sala::it</a></div><div class="ttdeci">map&lt; string, int &gt;::iterator it</div><div class="ttdoc">Iterador del inventario de la sala. </div><div class="ttdef"><b>Definition:</b> <a href="_sala_8hh_source.html#l00128">Sala.hh:128</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_sala_html_a1ee09851cf1735dc48ab69a91952e250"><div class="ttname"><a href="class_sala.html#a1ee09851cf1735dc48ab69a91952e250">Sala::map_prod_sala</a></div><div class="ttdeci">map&lt; string, int &gt; map_prod_sala</div><div class="ttdoc">Inventario de la sala. </div><div class="ttdef"><b>Definition:</b> <a href="_sala_8hh_source.html#l00126">Sala.hh:126</a></div></div>
+<div class="ttc" id="class_sala_html_aeb64df257f47ad63fe1ba3b163255e14"><div class="ttname"><a href="class_sala.html#aeb64df257f47ad63fe1ba3b163255e14">Sala::total_prod</a></div><div class="ttdeci">int total_prod</div><div class="ttdoc">Variable con el total de productos. </div><div class="ttdef"><b>Definition:</b> <a href="_sala_8hh_source.html#l00130">Sala.hh:130</a></div></div>
+<div class="ttc" id="class_sala_html"><div class="ttname"><a href="class_sala.html">Sala</a></div><div class="ttdoc">Representa una sala del almacen. </div><div class="ttdef"><b>Definition:</b> <a href="_sala_8hh_source.html#l00028">Sala.hh:28</a></div></div>
+<div class="ttc" id="class_sala_html_a4cccb03763eea3ebd6d192491b25f7dc"><div class="ttname"><a href="class_sala.html#a4cccb03763eea3ebd6d192491b25f7dc">Sala::filas</a></div><div class="ttdeci">int filas</div><div class="ttdoc">Filas de la estanteria. </div><div class="ttdef"><b>Definition:</b> <a href="_sala_8hh_source.html#l00120">Sala.hh:120</a></div></div>
+<div class="ttc" id="class_sala_html_a88aae17b7e590770fe8115b41da2e26a"><div class="ttname"><a href="class_sala.html#a88aae17b7e590770fe8115b41da2e26a">Sala::estanterias</a></div><div class="ttdeci">vector&lt; vector&lt; string &gt; &gt; estanterias</div><div class="ttdoc">Matriz que representa la estanteria. </div><div class="ttdef"><b>Definition:</b> <a href="_sala_8hh_source.html#l00124">Sala.hh:124</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

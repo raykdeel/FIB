@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica (Primavera 2020): Fitxer de Codi Cjt_Especies.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica (Primavera 2020)
+   &#160;<span id="projectnumber">Ricard Guixaró Trancho</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_Especies.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt___especies_8hh.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_especie_8hh.html">Especie.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM </span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_cjt___especies.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt___especies.html">Cjt_Especies</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#a64a525b38c78935e7432b362ea9a2306">   23</a></span>&#160;  map&lt;string, Especie&gt; <a class="code" href="class_cjt___especies.html#a64a525b38c78935e7432b362ea9a2306">mesp</a>;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#a25b19415a21bdabe9e2fc2ad7d2f68a5">   25</a></span>&#160;  map&lt;string, Especie&gt;::iterator <a class="code" href="class_cjt___especies.html#a25b19415a21bdabe9e2fc2ad7d2f68a5">it</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#ae56d242080836b8d3db505f0a8623090">   27</a></span>&#160;  map&lt;string, map&lt;string, double&gt; &gt; <a class="code" href="class_cjt___especies.html#ae56d242080836b8d3db505f0a8623090">table_species</a>;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#a11316f4de57c3d78183137abe33b31c5">   29</a></span>&#160;  <span class="keyword">typedef</span> map&lt;string, double&gt;::const_iterator <a class="code" href="class_cjt___especies.html#a11316f4de57c3d78183137abe33b31c5">table_species_column_iterator</a>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#a5da209bb73685ff7a89041202bcdd8c7">   31</a></span>&#160;  <span class="keyword">typedef</span> map&lt;string, map&lt;string, double&gt; &gt;::const_iterator <a class="code" href="class_cjt___especies.html#a5da209bb73685ff7a89041202bcdd8c7">table_species_iterator</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//CONSTRUCTORES</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_cjt___especies.html">Cjt_Especies</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//MODIFICADORES</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> add_species(<span class="keyword">const</span> <a class="code" href="class_especie.html">Especie</a>&amp; a);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> erase_species(<span class="keywordtype">string</span> <span class="keywordtype">id</span>); <span class="comment">//WORKS</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> initialize_distances();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> species_distance_update(<span class="keywordtype">bool</span> indicador, <span class="keywordtype">string</span> <span class="keywordtype">id</span>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">double</span> species_distance(<span class="keywordtype">string</span> id1, <span class="keywordtype">string</span> id2);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//CONSULTORES</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">string</span> returnid(<span class="keywordtype">int</span> i);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">double</span> returndist(<span class="keyword">const</span> <span class="keywordtype">string</span> id1, <span class="keyword">const</span> <span class="keywordtype">string</span> id2);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">int</span> species_set_size()<span class="keyword">const</span>;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">bool</span> species_exist(<span class="keywordtype">string</span> <span class="keywordtype">id</span>) ;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    </div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="class_especie.html">Especie</a> find_species(<span class="keywordtype">string</span> <span class="keywordtype">id</span>);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">//LECTURA I ESCRIPTURA</span></div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> read_species(<span class="keywordtype">int</span> n, <span class="keywordtype">int</span> k);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">void</span> print_species();</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> print_table_species();</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    </div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    </div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;};</div><div class="ttc" id="class_cjt___especies_html"><div class="ttname"><a href="class_cjt___especies.html">Cjt_Especies</a></div><div class="ttdoc">Representa un conjunt d&amp;#39;espècies. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00018">Cjt_Especies.hh:18</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_cjt___especies_html_a11316f4de57c3d78183137abe33b31c5"><div class="ttname"><a href="class_cjt___especies.html#a11316f4de57c3d78183137abe33b31c5">Cjt_Especies::table_species_column_iterator</a></div><div class="ttdeci">map&lt; string, double &gt;::const_iterator table_species_column_iterator</div><div class="ttdoc">Typedef d&amp;#39;un iterator que recorre una columna (map&lt;string, double&gt;) d&amp;#39;una taula d&amp;#39;espècies. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00029">Cjt_Especies.hh:29</a></div></div>
+<div class="ttc" id="class_cjt___especies_html_ae56d242080836b8d3db505f0a8623090"><div class="ttname"><a href="class_cjt___especies.html#ae56d242080836b8d3db505f0a8623090">Cjt_Especies::table_species</a></div><div class="ttdeci">map&lt; string, map&lt; string, double &gt; &gt; table_species</div><div class="ttdoc">Taula de distàncies entre les espècies. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00027">Cjt_Especies.hh:27</a></div></div>
+<div class="ttc" id="class_cjt___especies_html_a64a525b38c78935e7432b362ea9a2306"><div class="ttname"><a href="class_cjt___especies.html#a64a525b38c78935e7432b362ea9a2306">Cjt_Especies::mesp</a></div><div class="ttdeci">map&lt; string, Especie &gt; mesp</div><div class="ttdoc">Map d&amp;#39;espècies. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00023">Cjt_Especies.hh:23</a></div></div>
+<div class="ttc" id="class_especie_html"><div class="ttname"><a href="class_especie.html">Especie</a></div><div class="ttdoc">Representa una espècie amb un identificador i un gen. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00020">Especie.hh:20</a></div></div>
+<div class="ttc" id="_especie_8hh_html"><div class="ttname"><a href="_especie_8hh.html">Especie.hh</a></div><div class="ttdoc">Especificació de la classe Especie. </div></div>
+<div class="ttc" id="class_cjt___especies_html_a25b19415a21bdabe9e2fc2ad7d2f68a5"><div class="ttname"><a href="class_cjt___especies.html#a25b19415a21bdabe9e2fc2ad7d2f68a5">Cjt_Especies::it</a></div><div class="ttdeci">map&lt; string, Especie &gt;::iterator it</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00025">Cjt_Especies.hh:25</a></div></div>
+<div class="ttc" id="class_cjt___especies_html_a5da209bb73685ff7a89041202bcdd8c7"><div class="ttname"><a href="class_cjt___especies.html#a5da209bb73685ff7a89041202bcdd8c7">Cjt_Especies::table_species_iterator</a></div><div class="ttdeci">map&lt; string, map&lt; string, double &gt; &gt;::const_iterator table_species_iterator</div><div class="ttdoc">Typedef d&amp;#39;un iterator que recorre una taula d&amp;#39;espècies (map&lt;string, map&lt;string, double&gt;&gt;) ...</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00031">Cjt_Especies.hh:31</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

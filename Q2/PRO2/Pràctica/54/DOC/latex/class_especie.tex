@@ -1,0 +1,289 @@
+\hypertarget{class_especie}{}\section{Referència de la Classe Especie}
+\label{class_especie}\index{Especie@{Especie}}
+
+
+Representa una espècie amb un identificador i un gen.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_especie_a272c2488719cc9874b2f174906675b3d}{Especie} ()
+\begin{DoxyCompactList}\small\item\em Map de les distancies d\textquotesingle{}un cluster a la resta. \end{DoxyCompactList}\item 
+\hyperlink{class_especie_a00df4e464c347052383d92d310f68791}{Especie} (string id, string g, int k)
+\begin{DoxyCompactList}\small\item\em Constructora d\textquotesingle{}una espècie amb un identificador, un gen i el map de kmers. \end{DoxyCompactList}\item 
+void \hyperlink{class_especie_a9ac1aacc02f399f4c9c11cd8f67b0e46}{modify\+\_\+distances} (map$<$ string, double $>$ aux)
+\begin{DoxyCompactList}\small\item\em Modificadora del species\+\_\+distancies de l\textquotesingle{}espècie. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ \hyperlink{class_especie_a7e6c7615ab5458259c1f20bcd68ebd80}{create\+\_\+kmer} (string g, int k)
+\begin{DoxyCompactList}\small\item\em Conjunt de subseqüències contigües de g de longitud k. \end{DoxyCompactList}\item 
+string \hyperlink{class_especie_acfce0335ac5432dc681c2931b7986ace}{query\+\_\+identifier} () const
+\begin{DoxyCompactList}\small\item\em Consulta de l\textquotesingle{}identificador d\textquotesingle{}una espècie. \end{DoxyCompactList}\item 
+string \hyperlink{class_especie_a0781a594e45e036c0b59d161a7ebd8f3}{query\+\_\+gene} () const
+\begin{DoxyCompactList}\small\item\em Consulta del gen d\textquotesingle{}una espècie. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ \hyperlink{class_especie_ab446000c51668cabe39fb2b72ed5fff0}{query\+\_\+kmer} ()
+\begin{DoxyCompactList}\small\item\em Consulta del kmer de l\textquotesingle{}espècie. \end{DoxyCompactList}\item 
+void \hyperlink{class_especie_a1a60c5306ae621527bb9183a5c64583f}{read\+\_\+single\+\_\+species} (int k)
+\begin{DoxyCompactList}\small\item\em Consulta del species\+\_\+distances de l\textquotesingle{}espècie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa una espècie amb un identificador i un gen. 
+
+Conté l\textquotesingle{}identificador d\textquotesingle{}una espècie, i el seu gen, tots dos strings. 
+
+Definició a la línia 20 del fitxer Especie.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_especie_a272c2488719cc9874b2f174906675b3d}\label{class_especie_a272c2488719cc9874b2f174906675b3d}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{Especie()}{Especie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Map de les distancies d\textquotesingle{}un cluster a la resta. 
+
+Constructora per defecte.
+
+S\textquotesingle{}executa automàticament al declarar una espècie.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és una espècie amb identificador i gen no vàl·lids 
+\end{DoxyPostcond}
+
+
+Definició a la línia 7 del fitxer Especie.\+cc.
+
+
+\begin{DoxyCode}
+7                  \{
+8 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_especie_a00df4e464c347052383d92d310f68791}\label{class_especie_a00df4e464c347052383d92d310f68791}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{Especie()}{Especie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{string}]{g,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Constructora d\textquotesingle{}una espècie amb un identificador, un gen i el map de kmers. 
+
+Crea un espècie amb l\textquotesingle{}identificador i el gen donats, i inicialitza el map kmer amb el gen i la k.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és una espècie amb identifier = id i gene = g, i kmer inicializat. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 10 del fitxer Especie.\+cc.
+
+
+\begin{DoxyCode}
+10                                            \{
+11     identifier = id;
+12     gene = g;
+13     kmer = \hyperlink{class_especie_a7e6c7615ab5458259c1f20bcd68ebd80}{create\_kmer}(gene, k);
+14 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_especie_a9ac1aacc02f399f4c9c11cd8f67b0e46}\label{class_especie_a9ac1aacc02f399f4c9c11cd8f67b0e46}} 
+\index{Especie@{Especie}!modify\+\_\+distances@{modify\+\_\+distances}}
+\index{modify\+\_\+distances@{modify\+\_\+distances}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{modify\+\_\+distances()}{modify\_distances()}}
+{\footnotesize\ttfamily void Especie\+::modify\+\_\+distances (\begin{DoxyParamCaption}\item[{map$<$ string, double $>$}]{aux }\end{DoxyParamCaption})}
+
+
+
+Modificadora del species\+\_\+distancies de l\textquotesingle{}espècie. 
+
+Assigna a l\textquotesingle{}espècie del paràmetre implícit un map$<$string, double$>$ substituint species\+\_\+distances.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Modifica l\textquotesingle{}espècie del paràmetre implícit i subtitueix species\+\_\+distances amb l\textquotesingle{}element del paràmetre. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a7e6c7615ab5458259c1f20bcd68ebd80}\label{class_especie_a7e6c7615ab5458259c1f20bcd68ebd80}} 
+\index{Especie@{Especie}!create\+\_\+kmer@{create\+\_\+kmer}}
+\index{create\+\_\+kmer@{create\+\_\+kmer}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{create\+\_\+kmer()}{create\_kmer()}}
+{\footnotesize\ttfamily map$<$ string, int $>$ Especie\+::create\+\_\+kmer (\begin{DoxyParamCaption}\item[{string}]{g,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Conjunt de subseqüències contigües de g de longitud k. 
+
+Retorna un map$<$string, int$>$ on estan ordenades alfabèticament les subseqüències de longitud k del gen amb la seva freqüència.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un map$<$string,int$>$ d\textquotesingle{}strings amb totes les subseqüències contigües de g (gen) de longitud k ordenades. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 22 del fitxer Especie.\+cc.
+
+
+\begin{DoxyCode}
+22                                                      \{
+23     map<string, int> aux;
+24     \textcolor{keywordtype}{int} max = g.length() - k + 1;
+25     vector<string> v(max);
+26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < max; ++j) \{
+27         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = j; i < k; ++i) \{
+28             v[j] += g[i];
+29         \} 
+30         ++k;
+31     \}
+32     map<string, int>::const\_iterator it1;
+33     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < max; ++i) \{
+34         \textcolor{keywordtype}{string} s = v[i];
+35        it1 = aux.find(s);
+36        \textcolor{keywordflow}{if} (it1 == aux.end()) aux.insert(make\_pair(s, 1));
+37        \textcolor{keywordflow}{else} aux[s] = it1->second + 1;
+38     \}
+39     \textcolor{keywordflow}{return} aux;
+40 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_especie_acfce0335ac5432dc681c2931b7986ace}\label{class_especie_acfce0335ac5432dc681c2931b7986ace}} 
+\index{Especie@{Especie}!query\+\_\+identifier@{query\+\_\+identifier}}
+\index{query\+\_\+identifier@{query\+\_\+identifier}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{query\+\_\+identifier()}{query\_identifier()}}
+{\footnotesize\ttfamily string Especie\+::query\+\_\+identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta de l\textquotesingle{}identificador d\textquotesingle{}una espècie. 
+
+Retorna l\textquotesingle{}identificador de l\textquotesingle{}espècie del paràmetre implícit.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és l\textquotesingle{}identificador del paràmetre implícit. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 42 del fitxer Especie.\+cc.
+
+
+\begin{DoxyCode}
+42                                       \{
+43     \textcolor{keywordflow}{return} identifier;
+44 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_especie_a0781a594e45e036c0b59d161a7ebd8f3}\label{class_especie_a0781a594e45e036c0b59d161a7ebd8f3}} 
+\index{Especie@{Especie}!query\+\_\+gene@{query\+\_\+gene}}
+\index{query\+\_\+gene@{query\+\_\+gene}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{query\+\_\+gene()}{query\_gene()}}
+{\footnotesize\ttfamily string Especie\+::query\+\_\+gene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta del gen d\textquotesingle{}una espècie. 
+
+Retorna el gen de l\textquotesingle{}espècie del paràmetre implícit.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és el gen del paràmetre implícit. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 46 del fitxer Especie.\+cc.
+
+
+\begin{DoxyCode}
+46                                 \{
+47     \textcolor{keywordflow}{return} gene;
+48 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_especie_ab446000c51668cabe39fb2b72ed5fff0}\label{class_especie_ab446000c51668cabe39fb2b72ed5fff0}} 
+\index{Especie@{Especie}!query\+\_\+kmer@{query\+\_\+kmer}}
+\index{query\+\_\+kmer@{query\+\_\+kmer}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{query\+\_\+kmer()}{query\_kmer()}}
+{\footnotesize\ttfamily map$<$ string, int $>$ Especie\+::query\+\_\+kmer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta del kmer de l\textquotesingle{}espècie. 
+
+Retorna el map$<$string, int$>$ que emmagatzema les distancies entre l\textquotesingle{}espècie del paràmetre implícit i la resta d\textquotesingle{}espècies del conjunt d\textquotesingle{}espècies.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat el map kmer del paràmetre implícit. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 50 del fitxer Especie.\+cc.
+
+
+\begin{DoxyCode}
+50                                      \{
+51     \textcolor{keywordflow}{return} kmer;
+52 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_especie_a1a60c5306ae621527bb9183a5c64583f}\label{class_especie_a1a60c5306ae621527bb9183a5c64583f}} 
+\index{Especie@{Especie}!read\+\_\+single\+\_\+species@{read\+\_\+single\+\_\+species}}
+\index{read\+\_\+single\+\_\+species@{read\+\_\+single\+\_\+species}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{read\+\_\+single\+\_\+species()}{read\_single\_species()}}
+{\footnotesize\ttfamily void Especie\+::read\+\_\+single\+\_\+species (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Consulta del species\+\_\+distances de l\textquotesingle{}espècie. 
+
+Retorna el map$<$string, double$>$ que emmagatzema alfabèticament les subseqüències de longitud k del gen amb la seva freqüència.
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat el map species\+\_\+distances del paràmetre implícit.\+Lectura d\textquotesingle{}una espècie.
+\end{DoxyPostcond}
+Assigna a la espècie del paràmetre implícit l\textquotesingle{}identificador i el gen llegits. També calcula el kmer de l\textquotesingle{}espècie.
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha preparats al canal estandar d\textquotesingle{}entrada dos strings. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El paràmetre implícit passa a tenir els atributs llegits del canal estàndard d\textquotesingle{}entrada. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 59 del fitxer Especie.\+cc.
+
+
+\begin{DoxyCode}
+59                                        \{
+60     cin >> identifier >> gene;
+61     kmer = \hyperlink{class_especie_a7e6c7615ab5458259c1f20bcd68ebd80}{create\_kmer}(gene, k);
+62 \}
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_especie_8hh}{Especie.\+hh}\item 
+\hyperlink{_especie_8cc}{Especie.\+cc}\end{DoxyCompactItemize}

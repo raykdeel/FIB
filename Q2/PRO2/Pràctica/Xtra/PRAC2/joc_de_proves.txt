@@ -1,0 +1,64 @@
+5
+1 2 3 0 0 4 0 0 5 0 0
+3 2
+4 3
+2 5
+5 6
+1 2
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+inventario
+compactar 1  // comproba que passa al compactar la sala buida
+escribir 1
+reorganizar 1 //comproba que passa al reorganitzar sala buida
+escribir 1
+quitar_prod aa1 //comprobar que no pugui treure un producte que no existeix
+poner_prod aa1
+inventario // comprobar que s'ha afegit el producte amb 0 unitats
+quitar_items 4 aa1 5 // comprobar que passa al treure productes d'una sala buida
+poner_items 2 aa1 3
+inventario  
+consultar_prod aa1 
+consultar_pos 2 4 2 //probar si els posa els element amb l'ordre correcte
+consultar_pos 2 4 1
+quitar_items 2 aa1 1   // treiem un item per deixar un espai en buit
+compactar 2 // comprobar que compacta sense deixar espais buits pel mig i que després no hi hagi més elements dels que toca
+escribir 2
+poner_prod bb2
+poner_items 2 bb2 8
+inventario // comprobem que a l'inventari hi hagi els dos productes amb les unitats corresponents
+escribir 2
+quitar_items 2 bb2 5
+escribir 2 // comprobar que hagi tret els element que toquen en l'ordre que toca, hi han d'haver elements buits al mig
+poner_prod cc3
+quitar_prod cc3 
+inventario      // comprobar que eliminem un producte que te 0 unitats
+poner_prod cc3
+poner_items 2 cc3 4
+consultar_pos 2 2 2  // comprobar que posi be els elements
+consultar_pos 2 3 1
+consultar_pos 2 2 3
+escribir 2
+compactar 2  //comprobar que no hi hagi productes buits pel mig i que no hi hagi més productes dels que toquen
+escribir 2
+reorganizar 2 // reorganitzar cuan no estan en ordre per veure que els ordeni correctament
+escribir 2  
+reorganitzar 2  // comprobar que reorganitzi be una estanteria ja ordenada
+poner_prod dd4
+distribuir dd4 17 
+escribir 1 // comprobar que s'hagin distribuit els productes
+redimensionar 1 2 3 // comprobar que redimensioni l'estanteria cuan hi caben tots els productes
+redimensionar 1 1 1 // comprobar que no es redimensioni l'estanteria cuan no hi caben tots els productes
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+inventario
+poner_prod dd4  // comprobar que no puguis prosar el mateix element
+consultar_pos 4 4 5
+consultar_prod dd4
+fin

@@ -1,0 +1,70 @@
+NOM I COGNOMS: Ricard Guixaró Trancho
+
+FITXER DE RESPOSTES A LA PREGUNTA 4
+
+a) Quines variables i/o paràmetres de la subrutina f s’han d’emmagatzemar necessàriament en registres “segurs” $s? Indica també quin registre triaràs en cada cas.
+
+  - Variable o paràmetre: V
+    Registre: $s0
+
+  - ...
+
+(etc. afegeix aquí tantes files de la taula com necessitis omplir)
+
+b) Variables i registres del Bloc d'Activació
+
+  - Variable o registre: a
+    Distància respecte $sp: 0
+    Bytes que ocupa: 4
+
+
+  - Variable o registre: V
+    Distància respecte $sp: 4
+    Bytes que ocupa: 14
+
+
+  - Variable o registre: $ra
+    Distància respecte $sp: 28
+    Bytes que ocupa: 4
+
+  - ...
+
+(etc. afegeix aquí tantes files de la taula com necessitis omplir)
+
+    Mida total del bloc d'activació: 32
+
+c) Tradueix a assemblador la primera sentència:  *(y+1) = g(V, &a);
+
+
+
+
+
+d) Tradueix a assemblador la segona sentència:  return V[a];
+
+la $t0, V
+lw $t1, 0($sp)
+addu $t2, $t0, t$1
+lb $v0, 0($t2)
+jr $ra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

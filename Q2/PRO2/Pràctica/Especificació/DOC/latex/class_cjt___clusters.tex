@@ -1,0 +1,226 @@
+\hypertarget{class_cjt___clusters}{}\section{Referència de la Classe Cjt\+\_\+\+Clusters}
+\label{class_cjt___clusters}\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+
+
+Representa un conjunt de clusters.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}{Cjt\+\_\+\+Clusters} ()
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_a0f77012c09e43a3be17043ddf4ac061c}{afegir\+\_\+cluster} (const \hyperlink{class_cluster}{Cluster} \&A)
+\begin{DoxyCompactList}\small\item\em Afegir un cluster a un conjunt. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_ae29d4a65bc134e2b23a41802f079ec96}{eliminar\+\_\+cluster} (\hyperlink{class_cluster}{Cluster} A)
+\begin{DoxyCompactList}\small\item\em Esborrar un cluster d\textquotesingle{}un conjunt. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_abe1554d9fdd2d6b2e67d9ddd7b316903}{inicialitzar\+\_\+clusters} (int k, const \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} T)
+\begin{DoxyCompactList}\small\item\em Inicialitza un conjunt de clusters. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_a71ecc2306fc74d8d8308a034735bf894}{W\+P\+G\+MA} (int k, \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} T)
+\begin{DoxyCompactList}\small\item\em Executa un pas de l\textquotesingle{}algorisme W\+P\+G\+MA. \end{DoxyCompactList}\item 
+int \hyperlink{class_cjt___clusters_af8b1e9dbb486ad03f9973ac72160bae1}{mida\+\_\+cjt\+\_\+clusters} () const
+\begin{DoxyCompactList}\small\item\em Consultora de la mida d\textquotesingle{}un conjunt. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_a6cf197c0aa4bf1630c24fc0414f07378}{dist\+\_\+min} (int k, \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} T, int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em Consultora de la posició dels clusters a menor distància. \end{DoxyCompactList}\item 
+double \hyperlink{class_cjt___clusters_a94f19cb7786aec229365c7dc6f72ce70}{distancia\+\_\+cluster} (\hyperlink{class_cluster}{Cluster} A, \hyperlink{class_cluster}{Cluster} B, int \&k, \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} T)
+\begin{DoxyCompactList}\small\item\em Consultora de la distància entre dos clusters. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_a8a0b0b5985ebe229db5a7d21a5766146}{escriu\+\_\+arbre} (int k, vector$<$ double $>$ distancies)
+\begin{DoxyCompactList}\small\item\em Escriptura d\textquotesingle{}un arbre filogenètic. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_acf3f5238917b3b9aa0594ac3425d42a2}{escriu\+\_\+taulac} (int k, \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} T)
+\begin{DoxyCompactList}\small\item\em Escriptura de la taula de distàncies d\textquotesingle{}un conjunt de clusters. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___clusters_a0540284cbc0495cff9ff214a6b4f77a2}{imprimir\+\_\+cluster} (string id)
+\begin{DoxyCompactList}\small\item\em Escriptura d\textquotesingle{}un cluster. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa un conjunt de clusters. 
+
+Definició a la línia 21 del fitxer Cjt\+\_\+\+Clusters.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}\label{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{Cjt\+\_\+\+Clusters()}{Cjt\_Clusters()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Clusters\+::\+Cjt\+\_\+\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un conjunt de clusters amb ncluster = 0. 
+\end{DoxyPostcond}
+
+
+\subsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_cjt___clusters_a0f77012c09e43a3be17043ddf4ac061c}\label{class_cjt___clusters_a0f77012c09e43a3be17043ddf4ac061c}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!afegir\+\_\+cluster@{afegir\+\_\+cluster}}
+\index{afegir\+\_\+cluster@{afegir\+\_\+cluster}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{afegir\+\_\+cluster()}{afegir\_cluster()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::afegir\+\_\+cluster (\begin{DoxyParamCaption}\item[{const \hyperlink{class_cluster}{Cluster} \&}]{A }\end{DoxyParamCaption})}
+
+
+
+Afegir un cluster a un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implícit no està ple 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Afegeix el cluster a un conjunt. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_ae29d4a65bc134e2b23a41802f079ec96}\label{class_cjt___clusters_ae29d4a65bc134e2b23a41802f079ec96}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!eliminar\+\_\+cluster@{eliminar\+\_\+cluster}}
+\index{eliminar\+\_\+cluster@{eliminar\+\_\+cluster}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{eliminar\+\_\+cluster()}{eliminar\_cluster()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::eliminar\+\_\+cluster (\begin{DoxyParamCaption}\item[{\hyperlink{class_cluster}{Cluster}}]{A }\end{DoxyParamCaption})}
+
+
+
+Esborrar un cluster d\textquotesingle{}un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Elimina el cluster del conjunt si existeix. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_abe1554d9fdd2d6b2e67d9ddd7b316903}\label{class_cjt___clusters_abe1554d9fdd2d6b2e67d9ddd7b316903}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!inicialitzar\+\_\+clusters@{inicialitzar\+\_\+clusters}}
+\index{inicialitzar\+\_\+clusters@{inicialitzar\+\_\+clusters}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{inicialitzar\+\_\+clusters()}{inicialitzar\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::inicialitzar\+\_\+clusters (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{const \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}}]{T }\end{DoxyParamCaption})}
+
+
+
+Inicialitza un conjunt de clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha un conjunt d\textquotesingle{}espècies declarat al paràmetre. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Inicialitza el conjunt de cluster amb el conjunt d\textquotesingle{}espècies i imprimeix el conjunt de clusters resultant i la taula de distàncies indexada entre cada parell de clusters. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a71ecc2306fc74d8d8308a034735bf894}\label{class_cjt___clusters_a71ecc2306fc74d8d8308a034735bf894}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!W\+P\+G\+MA@{W\+P\+G\+MA}}
+\index{W\+P\+G\+MA@{W\+P\+G\+MA}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{W\+P\+G\+M\+A()}{WPGMA()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+W\+P\+G\+MA (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}}]{T }\end{DoxyParamCaption})}
+
+
+
+Executa un pas de l\textquotesingle{}algorisme W\+P\+G\+MA. 
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha un conjunt de clusters no buit, amb ncluster $>$= 2. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Fusiona en un nou cluster els dos clusters que es troben a menor distància, i els eliminar del conjunt. S\textquotesingle{}ha afegit al conjunt el cluster resultant i s\textquotesingle{}ha imprès la taula de distàncies entre clusters amb el conjunt actualitzat. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_af8b1e9dbb486ad03f9973ac72160bae1}\label{class_cjt___clusters_af8b1e9dbb486ad03f9973ac72160bae1}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!mida\+\_\+cjt\+\_\+clusters@{mida\+\_\+cjt\+\_\+clusters}}
+\index{mida\+\_\+cjt\+\_\+clusters@{mida\+\_\+cjt\+\_\+clusters}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{mida\+\_\+cjt\+\_\+clusters()}{mida\_cjt\_clusters()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Clusters\+::mida\+\_\+cjt\+\_\+clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la mida d\textquotesingle{}un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és el nombre de clusters del paràmetre implícit. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a6cf197c0aa4bf1630c24fc0414f07378}\label{class_cjt___clusters_a6cf197c0aa4bf1630c24fc0414f07378}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!dist\+\_\+min@{dist\+\_\+min}}
+\index{dist\+\_\+min@{dist\+\_\+min}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{dist\+\_\+min()}{dist\_min()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::dist\+\_\+min (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}}]{T,  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Consultora de la posició dels clusters a menor distància. 
+
+\begin{DoxyPrecond}{Precondició}
+El conjunt de clusters no està buit. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna la posició que ocupen els dos clusters que es troben a menor distància. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a94f19cb7786aec229365c7dc6f72ce70}\label{class_cjt___clusters_a94f19cb7786aec229365c7dc6f72ce70}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!distancia\+\_\+cluster@{distancia\+\_\+cluster}}
+\index{distancia\+\_\+cluster@{distancia\+\_\+cluster}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{distancia\+\_\+cluster()}{distancia\_cluster()}}
+{\footnotesize\ttfamily double Cjt\+\_\+\+Clusters\+::distancia\+\_\+cluster (\begin{DoxyParamCaption}\item[{\hyperlink{class_cluster}{Cluster}}]{A,  }\item[{\hyperlink{class_cluster}{Cluster}}]{B,  }\item[{int \&}]{k,  }\item[{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}}]{T }\end{DoxyParamCaption})}
+
+
+
+Consultora de la distància entre dos clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna la distància entre dos clusters, tenint en compte si contenen un únic element (espècie), o si estàn formats per més clusters. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a8a0b0b5985ebe229db5a7d21a5766146}\label{class_cjt___clusters_a8a0b0b5985ebe229db5a7d21a5766146}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!escriu\+\_\+arbre@{escriu\+\_\+arbre}}
+\index{escriu\+\_\+arbre@{escriu\+\_\+arbre}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{escriu\+\_\+arbre()}{escriu\_arbre()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::escriu\+\_\+arbre (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{vector$<$ double $>$}]{distancies }\end{DoxyParamCaption})}
+
+
+
+Escriptura d\textquotesingle{}un arbre filogenètic. 
+
+\begin{DoxyPrecond}{Precondició}
+Al vector distancies hi ha emmagatzedes les distàncies que hi havia entre els clusters fusionats. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El contingut previ del conjunt de clusters es descarta i s\textquotesingle{}inicialitza amb el conjunt d\textquotesingle{}espècies actual. S\textquotesingle{}ha imprès l\textquotesingle{}estructura de l\textquotesingle{}arbre amb els identificadors dels clusters i la distància entre cada cluster. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_acf3f5238917b3b9aa0594ac3425d42a2}\label{class_cjt___clusters_acf3f5238917b3b9aa0594ac3425d42a2}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!escriu\+\_\+taulac@{escriu\+\_\+taulac}}
+\index{escriu\+\_\+taulac@{escriu\+\_\+taulac}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{escriu\+\_\+taulac()}{escriu\_taulac()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::escriu\+\_\+taulac (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}}]{T }\end{DoxyParamCaption})}
+
+
+
+Escriptura de la taula de distàncies d\textquotesingle{}un conjunt de clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Escriu pel canal estàndar de sortida una taula amb les distàncies entre cada parell de clusters del conjunt. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a0540284cbc0495cff9ff214a6b4f77a2}\label{class_cjt___clusters_a0540284cbc0495cff9ff214a6b4f77a2}} 
+\index{Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}!imprimir\+\_\+cluster@{imprimir\+\_\+cluster}}
+\index{imprimir\+\_\+cluster@{imprimir\+\_\+cluster}!Cjt\+\_\+\+Clusters@{Cjt\+\_\+\+Clusters}}
+\subsubsection{\texorpdfstring{imprimir\+\_\+cluster()}{imprimir\_cluster()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::imprimir\+\_\+cluster (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Escriptura d\textquotesingle{}un cluster. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Imprimeix l\textquotesingle{}estructura de l\textquotesingle{}arbre que té l\textquotesingle{}identificador donat, o en cas de no existir aquest cluster, escriu un missatge d\textquotesingle{}error. 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt___clusters_8hh}{Cjt\+\_\+\+Clusters.\+hh}\end{DoxyCompactItemize}

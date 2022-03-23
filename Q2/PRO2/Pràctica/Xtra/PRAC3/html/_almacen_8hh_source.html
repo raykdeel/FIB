@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laboratorio de PRO2. Gestion de un almacen: Fichero Fuente Almacen.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio de PRO2. Gestion de un almacen
+   &#160;<span id="projectnumber">v5.0 26-05-2018</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Almacen.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_almacen_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _ALMACEN_HH_</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _ALMACEN_HH_</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM  </span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;BinTree.hh&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_almacen.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_almacen.html">Almacen</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">//Constructoras </span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="class_almacen.html#a68a6084d5775d391c52d4825072a0612">Almacen</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_almacen.html#a68a6084d5775d391c52d4825072a0612">Almacen</a>(BinTree&lt;int&gt; aux); </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  BinTree&lt;int&gt; <a class="code" href="class_almacen.html#af16a0a319f91554aad713c14ee95715b">consultar_almacen</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Lectura y escritura del almacen</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="class_almacen.html">Almacen</a> <a class="code" href="class_almacen.html#a36e2c6293837248738e5783e8e69795d">leer_almacen</a>();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_almacen.html#a0757bdd016511f5b2b1019060c0b2a9c">escribir</a>();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_almacen.html#a0744bed3ca8c796990c939bbf7fc03b9">   75</a></span>&#160;  BinTree&lt;int&gt; <a class="code" href="class_almacen.html#a0744bed3ca8c796990c939bbf7fc03b9">estructura_almacen</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_almacen_html_a68a6084d5775d391c52d4825072a0612"><div class="ttname"><a href="class_almacen.html#a68a6084d5775d391c52d4825072a0612">Almacen::Almacen</a></div><div class="ttdeci">Almacen()</div><div class="ttdoc">Creadora por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="_almacen_8cc_source.html#l00007">Almacen.cc:7</a></div></div>
+<div class="ttc" id="class_almacen_html_af16a0a319f91554aad713c14ee95715b"><div class="ttname"><a href="class_almacen.html#af16a0a319f91554aad713c14ee95715b">Almacen::consultar_almacen</a></div><div class="ttdeci">BinTree&lt; int &gt; consultar_almacen()</div><div class="ttdoc">Consultora del almacen. </div><div class="ttdef"><b>Definition:</b> <a href="_almacen_8cc_source.html#l00016">Almacen.cc:16</a></div></div>
+<div class="ttc" id="class_almacen_html_a36e2c6293837248738e5783e8e69795d"><div class="ttname"><a href="class_almacen.html#a36e2c6293837248738e5783e8e69795d">Almacen::leer_almacen</a></div><div class="ttdeci">Almacen leer_almacen()</div><div class="ttdoc">Se lee la distribucion de las salas del almacen. </div><div class="ttdef"><b>Definition:</b> <a href="_almacen_8cc_source.html#l00022">Almacen.cc:22</a></div></div>
+<div class="ttc" id="class_almacen_html_a0744bed3ca8c796990c939bbf7fc03b9"><div class="ttname"><a href="class_almacen.html#a0744bed3ca8c796990c939bbf7fc03b9">Almacen::estructura_almacen</a></div><div class="ttdeci">BinTree&lt; int &gt; estructura_almacen</div><div class="ttdoc">Arbol que representa la estructura del almacen. </div><div class="ttdef"><b>Definition:</b> <a href="_almacen_8hh_source.html#l00075">Almacen.hh:75</a></div></div>
+<div class="ttc" id="class_almacen_html_a0757bdd016511f5b2b1019060c0b2a9c"><div class="ttname"><a href="class_almacen.html#a0757bdd016511f5b2b1019060c0b2a9c">Almacen::escribir</a></div><div class="ttdeci">void escribir()</div><div class="ttdoc">Operación de escritura. </div><div class="ttdef"><b>Definition:</b> <a href="_almacen_8cc_source.html#l00038">Almacen.cc:38</a></div></div>
+<div class="ttc" id="class_almacen_html"><div class="ttname"><a href="class_almacen.html">Almacen</a></div><div class="ttdoc">Representa la estructura del almacen. </div><div class="ttdef"><b>Definition:</b> <a href="_almacen_8hh_source.html#l00020">Almacen.hh:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

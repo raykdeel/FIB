@@ -1,0 +1,210 @@
+\hypertarget{class_cluster}{}\section{Referència de la Classe Cluster}
+\label{class_cluster}\index{Cluster@{Cluster}}
+
+
+Representa un cluster format per un idcluster i Bin\+Tree.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}{Cluster} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\hyperlink{class_cluster_a2559ebf853192492bcae2cd68f54e5a7}{Cluster} (Bin\+Tree$<$ \hyperlink{class_especie}{Especie} $>$ aux)
+\begin{DoxyCompactList}\small\item\em Constructora d\textquotesingle{}un cluster amb un arbre. \end{DoxyCompactList}\item 
+void \hyperlink{class_cluster_a9707363e42b561a69da942006e046773}{modificar\+\_\+arbre} (const Bin\+Tree$<$ \hyperlink{class_especie}{Especie} $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Modificadora de l\textquotesingle{}arbre. \end{DoxyCompactList}\item 
+void \hyperlink{class_cluster_a7eed2fbce7f913320f5aaadc4ce9a4bc}{modificar\+\_\+idcl} (const \hyperlink{class_especie}{Especie} \&a)
+\begin{DoxyCompactList}\small\item\em Modificadora de l\textquotesingle{}identificador del cluster. \end{DoxyCompactList}\item 
+\hyperlink{class_cluster}{Cluster} \hyperlink{class_cluster_aeabe2287a82148281582a77f04ca6977}{fusio\+\_\+clusters} (const \hyperlink{class_cluster}{Cluster} \&A, const \hyperlink{class_cluster}{Cluster} \&B, const \hyperlink{class_especie}{Especie} \&a)
+\begin{DoxyCompactList}\small\item\em Fusió de dos clusters. \end{DoxyCompactList}\item 
+int \hyperlink{class_cluster_afd618d800539e0d228c7f2e0a03f8561}{consultar\+\_\+altura} (const Bin\+Tree$<$ \hyperlink{class_especie}{Especie} $>$ b)
+\begin{DoxyCompactList}\small\item\em Consulta de l\textquotesingle{}altura d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+string \hyperlink{class_cluster_ae12763894ce5a3f551d7c6ba16f13db8}{consultar\+\_\+idcluster} () const
+\begin{DoxyCompactList}\small\item\em Consulta de l\textquotesingle{}identificador d\textquotesingle{}un cluster. \end{DoxyCompactList}\item 
+Bin\+Tree$<$ \hyperlink{class_especie}{Especie} $>$ \hyperlink{class_cluster_a0fdd12bda86041ea38bd761adb90f72b}{consultar\+\_\+arbre} () const
+\begin{DoxyCompactList}\small\item\em Consulta de l\textquotesingle{}arbre d\textquotesingle{}un cluster. \end{DoxyCompactList}\item 
+int \hyperlink{class_cluster_a4c8575921b44eae850575e1b199364f8}{mida\+\_\+cluster} () const
+\begin{DoxyCompactList}\small\item\em Consulta de la mida d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+void \hyperlink{class_cluster_a965f3fd78351c4eb06864f4811993823}{escriu\+\_\+cluster} (int i) const
+\begin{DoxyCompactList}\small\item\em Escriptura d\textquotesingle{}un cluster. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa un cluster format per un idcluster i Bin\+Tree. 
+
+Conté l\textquotesingle{}identificador del cluster i un Bin\+Tree d\textquotesingle{}espècies anomenat arbre. 
+
+Definició a la línia 24 del fitxer Cluster.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}\label{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és un cluster amb un idcluster i un arbre buits. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_a2559ebf853192492bcae2cd68f54e5a7}\label{class_cluster_a2559ebf853192492bcae2cd68f54e5a7}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{Bin\+Tree$<$ \hyperlink{class_especie}{Especie} $>$}]{aux }\end{DoxyParamCaption})}
+
+
+
+Constructora d\textquotesingle{}un cluster amb un arbre. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és un cluster amb l\textquotesingle{}arbre donat pel paràmetre. 
+\end{DoxyPostcond}
+
+
+\subsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_cluster_a9707363e42b561a69da942006e046773}\label{class_cluster_a9707363e42b561a69da942006e046773}} 
+\index{Cluster@{Cluster}!modificar\+\_\+arbre@{modificar\+\_\+arbre}}
+\index{modificar\+\_\+arbre@{modificar\+\_\+arbre}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{modificar\+\_\+arbre()}{modificar\_arbre()}}
+{\footnotesize\ttfamily void Cluster\+::modificar\+\_\+arbre (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ \hyperlink{class_especie}{Especie} $>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Modificadora de l\textquotesingle{}arbre. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Substitueix l\textquotesingle{}arbre del cluster per l\textquotesingle{}arbre donat pel paràmetre. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_a7eed2fbce7f913320f5aaadc4ce9a4bc}\label{class_cluster_a7eed2fbce7f913320f5aaadc4ce9a4bc}} 
+\index{Cluster@{Cluster}!modificar\+\_\+idcl@{modificar\+\_\+idcl}}
+\index{modificar\+\_\+idcl@{modificar\+\_\+idcl}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{modificar\+\_\+idcl()}{modificar\_idcl()}}
+{\footnotesize\ttfamily void Cluster\+::modificar\+\_\+idcl (\begin{DoxyParamCaption}\item[{const \hyperlink{class_especie}{Especie} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Modificadora de l\textquotesingle{}identificador del cluster. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Li assigna a idcluster l\textquotesingle{}identificador de l\textquotesingle{}espècie del parèmentre. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_aeabe2287a82148281582a77f04ca6977}\label{class_cluster_aeabe2287a82148281582a77f04ca6977}} 
+\index{Cluster@{Cluster}!fusio\+\_\+clusters@{fusio\+\_\+clusters}}
+\index{fusio\+\_\+clusters@{fusio\+\_\+clusters}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{fusio\+\_\+clusters()}{fusio\_clusters()}}
+{\footnotesize\ttfamily \hyperlink{class_cluster}{Cluster} Cluster\+::fusio\+\_\+clusters (\begin{DoxyParamCaption}\item[{const \hyperlink{class_cluster}{Cluster} \&}]{A,  }\item[{const \hyperlink{class_cluster}{Cluster} \&}]{B,  }\item[{const \hyperlink{class_especie}{Especie} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Fusió de dos clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un nou cluster amb el cluster A com a fill esquerra, i l\textquotesingle{}arbre B com a fill dret i li assigna l\textquotesingle{}espècie donada. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_afd618d800539e0d228c7f2e0a03f8561}\label{class_cluster_afd618d800539e0d228c7f2e0a03f8561}} 
+\index{Cluster@{Cluster}!consultar\+\_\+altura@{consultar\+\_\+altura}}
+\index{consultar\+\_\+altura@{consultar\+\_\+altura}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{consultar\+\_\+altura()}{consultar\_altura()}}
+{\footnotesize\ttfamily int Cluster\+::consultar\+\_\+altura (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ \hyperlink{class_especie}{Especie} $>$}]{b }\end{DoxyParamCaption})}
+
+
+
+Consulta de l\textquotesingle{}altura d\textquotesingle{}un arbre. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si l\textquotesingle{}arbre està buit, retorna 0, sino, retorna l\textquotesingle{}altura de l\textquotesingle{}arbre (incloent els fills). 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_ae12763894ce5a3f551d7c6ba16f13db8}\label{class_cluster_ae12763894ce5a3f551d7c6ba16f13db8}} 
+\index{Cluster@{Cluster}!consultar\+\_\+idcluster@{consultar\+\_\+idcluster}}
+\index{consultar\+\_\+idcluster@{consultar\+\_\+idcluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{consultar\+\_\+idcluster()}{consultar\_idcluster()}}
+{\footnotesize\ttfamily string Cluster\+::consultar\+\_\+idcluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta de l\textquotesingle{}identificador d\textquotesingle{}un cluster. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és l\textquotesingle{}idcluster del paràmetre implícit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_a0fdd12bda86041ea38bd761adb90f72b}\label{class_cluster_a0fdd12bda86041ea38bd761adb90f72b}} 
+\index{Cluster@{Cluster}!consultar\+\_\+arbre@{consultar\+\_\+arbre}}
+\index{consultar\+\_\+arbre@{consultar\+\_\+arbre}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{consultar\+\_\+arbre()}{consultar\_arbre()}}
+{\footnotesize\ttfamily Bin\+Tree$<$\hyperlink{class_especie}{Especie}$>$ Cluster\+::consultar\+\_\+arbre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta de l\textquotesingle{}arbre d\textquotesingle{}un cluster. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és l\textquotesingle{}arbre del paràmetre implícit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_a4c8575921b44eae850575e1b199364f8}\label{class_cluster_a4c8575921b44eae850575e1b199364f8}} 
+\index{Cluster@{Cluster}!mida\+\_\+cluster@{mida\+\_\+cluster}}
+\index{mida\+\_\+cluster@{mida\+\_\+cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{mida\+\_\+cluster()}{mida\_cluster()}}
+{\footnotesize\ttfamily int Cluster\+::mida\+\_\+cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta de la mida d\textquotesingle{}un arbre. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és el nombre de nodes de l\textquotesingle{}arbre del paràmetre implícit. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_a965f3fd78351c4eb06864f4811993823}\label{class_cluster_a965f3fd78351c4eb06864f4811993823}} 
+\index{Cluster@{Cluster}!escriu\+\_\+cluster@{escriu\+\_\+cluster}}
+\index{escriu\+\_\+cluster@{escriu\+\_\+cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{escriu\+\_\+cluster()}{escriu\_cluster()}}
+{\footnotesize\ttfamily void Cluster\+::escriu\+\_\+cluster (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Escriptura d\textquotesingle{}un cluster. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han escrit els atributs del paràmetre implícit al canal estàndard de sortida. 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cluster_8hh}{Cluster.\+hh}\end{DoxyCompactItemize}

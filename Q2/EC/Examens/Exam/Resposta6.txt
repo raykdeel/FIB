@@ -1,0 +1,26 @@
+FITXER DE RESPOSTES A LA PREGUNTA 6
+Ricard Guixaró Trancho
+
+A) Quins seran els valors inicials dels tres registres R, D i Q, en binari?
+
+    R = 00001111
+
+    D = 00000010
+
+    Q = 00000000
+	
+B) Quantes sumes i quantes restes ha de fer la ALU per obtenir el resultat final?
+
+    Número de sumes = 4
+
+    Número de restes = 4
+
+C) Quins seran els valors finals dels tres registres R, D i Q, en binari?
+
+    R = 00000001
+
+    D = 00000010
+
+    Q = 00000111
+
+

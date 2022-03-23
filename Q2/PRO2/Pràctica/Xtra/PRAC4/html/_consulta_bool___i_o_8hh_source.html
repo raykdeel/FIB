@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>practica pro2.: Fichero Fuente ConsultaBool_IO.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">practica pro2.
+   &#160;<span id="projectnumber">version 4 15-abr-2018</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ConsultaBool_IO.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_consulta_bool___i_o_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef CONSULTABOOL_IO_HH</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define CONSULTABOOL_IO_HH</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fecha_8hh.html">fecha.hh</a>&quot;</span>  </div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  </div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bin_tree_8hh.html">BinTree.hh</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_consulta_bool.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_consulta_bool.html">ConsultaBool</a> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   <span class="keyword">struct </span>token {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">string</span> tipo; <span class="comment">// tipo de la consulta: TAG, DATE, AND, OR o NOT</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">string</span> etq; <span class="comment">// si tipo == &quot;TAG&quot;, esta es la etiqueta</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classfecha.html">fecha</a> fini, ffin; <span class="comment">// si tipo == &quot;DATE&quot;, estas son las fechas de inicio y fin</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                      <span class="comment">// se asume que existe una clase Fecha y que hay una operacion para</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                      <span class="comment">// leer fechas</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_bin_tree.html">BinTree&lt;pair&lt;string,pair&lt;string,pair&lt;fecha,fecha&gt;</a>&gt;&gt;&gt; ar;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> read_input(istream&amp; is, vector&lt;token&gt;&amp; l);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_consulta_bool.html">ConsultaBool</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_consulta_bool.html">ConsultaBool</a>(<span class="keyword">const</span> <a class="code" href="classfecha.html">fecha</a>&amp; fini,<span class="keyword">const</span> <a class="code" href="classfecha.html">fecha</a>&amp; ffin);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;       </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_consulta_bool.html">ConsultaBool</a> construct_bool_query(<span class="keyword">const</span> vector&lt;token&gt;&amp; postfix);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//constructora</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span>    <a class="code" href="class_consulta_bool.html">ConsultaBool</a>();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//modificadora</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> read(istream&amp; is);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_consulta_bool.html">ConsultaBool</a> AND(<span class="keyword">const</span> <a class="code" href="class_consulta_bool.html">ConsultaBool</a>&amp; q2);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_consulta_bool.html">ConsultaBool</a> OR(<span class="keyword">const</span> <a class="code" href="class_consulta_bool.html">ConsultaBool</a>&amp; q2);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_consulta_bool.html">ConsultaBool</a> NOT();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_bin_tree.html">BinTree&lt;pair&lt;string,pair&lt;string,pair&lt;fecha,fecha&gt;</a>&gt;&gt;&gt; consultararbol();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> convert_infix_to_postfix(<span class="keyword">const</span> vector&lt;token&gt;&amp; infix, vector&lt;token&gt;&amp; postfix);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="_bin_tree_8hh_html"><div class="ttname"><a href="_bin_tree_8hh.html">BinTree.hh</a></div></div>
+<div class="ttc" id="class_bin_tree_html"><div class="ttname"><a href="class_bin_tree.html">BinTree</a></div><div class="ttdef"><b>Definition:</b> <a href="_bin_tree_8hh_source.html#l00012">BinTree.hh:12</a></div></div>
+<div class="ttc" id="class_consulta_bool_html"><div class="ttname"><a href="class_consulta_bool.html">ConsultaBool</a></div><div class="ttdoc">representa una foto con su fecha y sus etiquetas. </div><div class="ttdef"><b>Definition:</b> <a href="_consulta_bool___i_o_8hh_source.html#l00025">ConsultaBool_IO.hh:25</a></div></div>
+<div class="ttc" id="fecha_8hh_html"><div class="ttname"><a href="fecha_8hh.html">fecha.hh</a></div><div class="ttdoc">Especificacio de la clase fecha. </div></div>
+<div class="ttc" id="classfecha_html"><div class="ttname"><a href="classfecha.html">fecha</a></div><div class="ttdoc">representa una fecha. </div><div class="ttdef"><b>Definition:</b> <a href="fecha_8hh_source.html#l00017">fecha.hh:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

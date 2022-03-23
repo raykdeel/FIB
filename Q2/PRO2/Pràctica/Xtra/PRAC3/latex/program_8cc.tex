@@ -1,0 +1,208 @@
+\hypertarget{program_8cc}{}\section{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal para el ejercicio {\itshape Gestión de un almacen}.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_a1e4d89a3943c1196574af1dc21cb4386}{distribuir\+\_\+almacen} (Bin\+Tree$<$ int $>$ a, \hyperlink{class_cjt__salas}{Cjt\+\_\+salas} \&almacen, \hyperlink{class_cjt__productos}{Cjt\+\_\+productos} \&inventario, string iden\+\_\+prod, int uni\+\_\+prod)
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Programa principal para el ejercicio {\itshape Gestión de un almacen}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal para el ejercicio {\itshape Gestión de un almacen}. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_a1e4d89a3943c1196574af1dc21cb4386}\label{program_8cc_a1e4d89a3943c1196574af1dc21cb4386}} 
+\index{program.\+cc@{program.\+cc}!distribuir\+\_\+almacen@{distribuir\+\_\+almacen}}
+\index{distribuir\+\_\+almacen@{distribuir\+\_\+almacen}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{distribuir\+\_\+almacen()}{distribuir\_almacen()}}
+{\footnotesize\ttfamily int distribuir\+\_\+almacen (\begin{DoxyParamCaption}\item[{Bin\+Tree$<$ int $>$}]{a,  }\item[{\hyperlink{class_cjt__salas}{Cjt\+\_\+salas} \&}]{almacen,  }\item[{\hyperlink{class_cjt__productos}{Cjt\+\_\+productos} \&}]{inventario,  }\item[{string}]{iden\+\_\+prod,  }\item[{int}]{uni\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 31 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+31                                                                                                            
+                 \{
+32     \textcolor{keywordflow}{if}(!a.left().empty() and !a.right().empty() and uni\_prod>0  )\{ \textcolor{comment}{//entra si nodo con hijos}
+33         \textcolor{keywordtype}{int} aux;
+34         aux= almacen.\hyperlink{class_cjt__salas_ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8}{poner\_items}(a.value(), iden\_prod, uni\_prod); \textcolor{comment}{//devuelve los que no se han
+       puesto en la sala}
+35         aux=uni\_prod-aux; \textcolor{comment}{//los productos puestos}
+36         inventario.\hyperlink{class_cjt__productos_ac120487a0d46654b0d89654f20055083}{modificar}(iden\_prod,(inventario.\hyperlink{class_cjt__productos_a8198f3b57f6d1d9fd4096e3e19fe9a46}{consultar\_prod}(iden\_prod)+aux) );
+       \textcolor{comment}{// añadimos al inventario}
+37         uni\_prod-=aux;
+38         \textcolor{keywordtype}{int} rest=0, rest1=0;
+39         rest = \hyperlink{program_8cc_a1e4d89a3943c1196574af1dc21cb4386}{distribuir\_almacen}(a.left(),almacen, inventario,iden\_prod,(uni\_prod/2)+(
+      uni\_prod%2));
+40         rest1 = \hyperlink{program_8cc_a1e4d89a3943c1196574af1dc21cb4386}{distribuir\_almacen}(a.right(),almacen, inventario,iden\_prod,uni\_prod/2);
+41         \textcolor{keywordflow}{return} rest+rest1; \textcolor{comment}{// productos no puestos en el almacen}
+42     \}
+43     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(uni\_prod  ==  0 ) \textcolor{keywordflow}{return} 0;
+44     \textcolor{keywordflow}{else} \{ \textcolor{comment}{//llega a un nodo sin hijos}
+45         \textcolor{keywordtype}{int} aux;
+46         aux= almacen.\hyperlink{class_cjt__salas_ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8}{poner\_items}(a.value(), iden\_prod, uni\_prod); \textcolor{comment}{//devuelve los que no se han
+       puesto en la sala}
+47         aux=uni\_prod-aux; \textcolor{comment}{//los productos puestos}
+48         inventario.modificar(iden\_prod,(inventario.consultar\_prod(iden\_prod)+aux) ); \textcolor{comment}{// añadimos al
+       inventario}
+49         uni\_prod-=aux;
+50         \textcolor{keywordflow}{return} uni\_prod;
+51 
+52     \}
+53 
+54 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Programa principal para el ejercicio {\itshape Gestión de un almacen}. 
+
+
+
+Definición en la línea 59 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+60 \{
+61     \textcolor{keywordtype}{int} n;
+62     cin>> n;
+63     \hyperlink{class_almacen}{Almacen} estructura;
+64     \hyperlink{class_cjt__productos}{Cjt\_productos} inventario;
+65     \hyperlink{class_cjt__salas}{Cjt\_salas} almacen;
+66 
+67     estructura.\hyperlink{class_almacen_a36e2c6293837248738e5783e8e69795d}{leer\_almacen}();    
+68     almacen.\hyperlink{class_cjt__salas_ae79acb3461bd487e7bda3af42a3f96b7}{leer}(n);
+69     
+70     \textcolor{keywordtype}{string} opcio;
+71     \textcolor{keywordflow}{while}(cin>>opcio )\{
+72         \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"poner\_prod"})\{
+73             \textcolor{keywordtype}{string} iden\_prod;
+74             cin>>iden\_prod;
+75             
+76             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_prod<<endl;
+77             inventario.\hyperlink{class_cjt__productos_a501153e137c6437ff84faac121a88bc8}{poner\_prod}(iden\_prod);
+78         \}
+79         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"quitar\_prod"})\{
+80             \textcolor{keywordtype}{string} iden\_prod;
+81             cin>>iden\_prod;
+82             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_prod<<endl;
+83             inventario.\hyperlink{class_cjt__productos_a2da6626c288772c1169dcf32c39202e6}{quitar\_prod}(iden\_prod);
+84         \}
+85         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"poner\_items"})\{ \textcolor{comment}{//}
+86             \textcolor{keywordtype}{int} iden\_sala, uni\_prod, aux;
+87             \textcolor{keywordtype}{string} iden\_prod;
+88             cin>>iden\_sala>>iden\_prod>>uni\_prod;
+89             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_sala<<\textcolor{stringliteral}{" "}<<iden\_prod<<\textcolor{stringliteral}{" "}<<uni\_prod<<endl;
+90             \textcolor{keywordflow}{if}(inventario.\hyperlink{class_cjt__productos_a33f8148c4da6fe03d49c993e4b477494}{existe\_prod}(iden\_prod))\{
+91                 aux=almacen.\hyperlink{class_cjt__salas_ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8}{poner\_items}(iden\_sala,iden\_prod,uni\_prod);
+92                 \textcolor{keywordflow}{if}(aux!=-1) cout<<\textcolor{stringliteral}{"  "}<<aux<<endl;
+93                 aux=uni\_prod-aux; \textcolor{comment}{// productos en el almacen}
+94                 inventario.\hyperlink{class_cjt__productos_ac120487a0d46654b0d89654f20055083}{modificar}(iden\_prod,(inventario.
+      \hyperlink{class_cjt__productos_a8198f3b57f6d1d9fd4096e3e19fe9a46}{consultar\_prod}(iden\_prod)+aux) ); \textcolor{comment}{//actualizar inventario}
+95             \}
+96             \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+97         \}
+98         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"quitar\_items"})\{\textcolor{comment}{//}
+99             \textcolor{keywordtype}{int} iden\_sala, uni\_prod, aux;
+100             \textcolor{keywordtype}{string} iden\_prod;
+101             cin>>iden\_sala>>iden\_prod>>uni\_prod;
+102             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_sala<<\textcolor{stringliteral}{" "}<<iden\_prod<<\textcolor{stringliteral}{" "}<<uni\_prod<<endl;
+103             \textcolor{keywordflow}{if}(inventario.\hyperlink{class_cjt__productos_a33f8148c4da6fe03d49c993e4b477494}{existe\_prod}(iden\_prod))\{
+104                 aux=almacen.\hyperlink{class_cjt__salas_acd5d8368e51d7bbd557958063c81cc43}{quitar\_items}(iden\_sala,iden\_prod,uni\_prod);
+105                 \textcolor{keywordflow}{if}(aux!=-1) cout<<\textcolor{stringliteral}{"  "}<<aux<<endl;
+106                 aux=uni\_prod-aux; \textcolor{comment}{// productos que se han quitado del almacen}
+107                 inventario.\hyperlink{class_cjt__productos_ac120487a0d46654b0d89654f20055083}{modificar}(iden\_prod,(inventario.
+      \hyperlink{class_cjt__productos_a8198f3b57f6d1d9fd4096e3e19fe9a46}{consultar\_prod}(iden\_prod)-aux) ); \textcolor{comment}{// actualizar inventario}
+108             \}
+109             \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+110 
+111         \}
+112         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"distribuir"})\{ \textcolor{comment}{//}
+113             \textcolor{keywordtype}{string} iden\_prod;
+114             \textcolor{keywordtype}{int} uni\_prod;
+115             cin>> iden\_prod>>uni\_prod;
+116             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_prod<<\textcolor{stringliteral}{" "}<<uni\_prod<<endl;
+117             \textcolor{keywordflow}{if}( inventario.\hyperlink{class_cjt__productos_a33f8148c4da6fe03d49c993e4b477494}{existe\_prod}(iden\_prod) )\{
+118                 cout<<\textcolor{stringliteral}{"  "}<<\hyperlink{program_8cc_a1e4d89a3943c1196574af1dc21cb4386}{distribuir\_almacen}(estructura.
+      \hyperlink{class_almacen_af16a0a319f91554aad713c14ee95715b}{consultar\_almacen}(),almacen,inventario,iden\_prod,uni\_prod)<<endl;
+119                 \textcolor{comment}{//imprime por pantalla los productos que no se han guardado en el almacen}
+120             \}
+121             \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+122 
+123         \}
+124         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"compactar"})\{ \textcolor{comment}{//}
+125             \textcolor{keywordtype}{int} iden\_sala;
+126             cin>> iden\_sala;
+127             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_sala<<endl;
+128             almacen.\hyperlink{class_cjt__salas_a1ecd0e8e0ae84290c354447e2a305e80}{compactar}(iden\_sala);
+129 
+130         \}
+131         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"reorganizar"})\{ \textcolor{comment}{//}
+132             \textcolor{keywordtype}{int} iden\_sala;
+133             cin>>iden\_sala;
+134             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_sala<<endl;
+135             almacen.\hyperlink{class_cjt__salas_a540d49e9ee9a7a078e18f610399335b6}{reorganizar}(iden\_sala);
+136         \}
+137         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"redimensionar"})\{ \textcolor{comment}{//}
+138             \textcolor{keywordtype}{int} iden\_sala, filas, columnas;
+139             cin>>iden\_sala>>filas>>columnas;
+140             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_sala<<\textcolor{stringliteral}{" "}<<filas<<\textcolor{stringliteral}{" "}<<columnas<<endl;
+141             almacen.\hyperlink{class_cjt__salas_af4a9c609def322edba117ae76aa0b3b9}{redimensionar}(iden\_sala,filas,columnas);
+142         \}
+143         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"inventario"})\{
+144             cout<<opcio<<endl;
+145             inventario.\hyperlink{class_cjt__productos_a51582783f3f107f84cc3c5f8cccded36}{escribir}();
+146         \}
+147         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"escribir"})\{
+148             \textcolor{keywordtype}{int} iden\_sala;
+149             cin>> iden\_sala;
+150             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_sala<<endl;
+151             almacen.\hyperlink{class_cjt__salas_a184f3ef5d7857c7f76ecef58b093f252}{escribir}(iden\_sala);
+152         \}
+153         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"consultar\_pos"})\{
+154             \textcolor{keywordtype}{int} iden\_sala, filas, columnas;
+155             cin>>iden\_sala>>filas>>columnas;
+156             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_sala<<\textcolor{stringliteral}{" "}<<filas<<\textcolor{stringliteral}{" "}<<columnas<<endl;
+157             \textcolor{keywordtype}{string} aux=almacen.\hyperlink{class_cjt__salas_a7e06b122fbbee58f24b8938bc2975b16}{consultar\_pos}(iden\_sala,filas,columnas);
+158             \textcolor{keywordflow}{if}(aux!=\textcolor{stringliteral}{""})cout<<\textcolor{stringliteral}{"  "}<<aux<<endl;
+159 
+160         \}
+161         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"consultar\_prod"})\{
+162             \textcolor{keywordtype}{string} iden\_prod;
+163             cin>> iden\_prod;
+164             cout<<opcio<<\textcolor{stringliteral}{" "}<<iden\_prod<<endl;
+165             \textcolor{keywordtype}{int} aux=inventario.\hyperlink{class_cjt__productos_a8198f3b57f6d1d9fd4096e3e19fe9a46}{consultar\_prod}(iden\_prod);
+166             \textcolor{keywordflow}{if}(aux!=-1)cout<<\textcolor{stringliteral}{"  "}<<aux<<endl;
+167 
+168         \}
+169         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcio == \textcolor{stringliteral}{"fin"})\{
+170             cout<<opcio<<endl;
+171             \textcolor{keywordflow}{break};
+172         \}
+173     \}
+174 
+175 \}
+\end{DoxyCode}

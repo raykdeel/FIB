@@ -1,0 +1,347 @@
+
+body {
+    padding-top: 51px;
+}
+
+html {
+    height: 100%;
+}
+
+
+.panel-heading {
+    font-weight: bold;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+.large {
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: ScoreFont;
+    src: url(/ttf/Terminal.ttf);
+    nosrc: url(/ttf/Pennstat.ttf);
+    nosrc: url(/ttf/Font-Airport.ttf);
+}
+
+.score_font_huge {
+    font-family: ScoreFont;
+    font-size: 800%;
+}
+
+
+.score_font {
+    font-family: ScoreFont;
+}
+
+
+.result-table td {
+    padding: 0px 10px 0px 10px;
+}
+
+.result-table th {
+    padding: 0px 10px 0px 10px;
+}
+
+
+.pre-white {
+    background-color: white;
+}
+
+.no-border {
+    border: 0px;
+}
+
+
+
+.hello-world {
+    padding: 10px 0px 10px 0px;
+    color: @pre-color;
+    background-color: @pre-bg;
+    border: 1px solid @pre-border-color;
+    border-radius: @border-radius-base;
+}
+
+
+
+.sidebar-nav {
+    overflow-y: auto;
+    position: fixed;
+    bottom: 0;
+    top: 51px;
+    width: 180px;
+    max-height: 100% !important;
+}
+
+
+.popover{
+    max-width: 500px;
+}
+
+
+
+.panel-purple {
+    border-color: purple;
+}
+
+.panel-purple .panel-heading {
+    border-color: purple;
+    color: #fff;
+    background-color: purple;
+}
+
+.panel-purple a {
+    color: purple;
+}
+
+.panel-purple a:hover {
+    color: #BDA0CB;
+}
+
+
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+    color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+.panel.panel-blue {
+    border-color: #337ab7;
+}
+
+.panel-blue {
+    border-color: #337ab7;
+}
+
+.panel-blue .panel-heading {
+    border-color: #337ab7;
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.panel-blue a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.panel-blue a:hover {
+    color: #236aa7;
+}
+
+
+
+.panel-grey {
+    border-color: #808080;
+}
+
+.panel-grey .panel-heading {
+    border-color: #808080;
+    color: #fff;
+    background-color: #808080;
+}
+
+.panel-grey a {
+    color: #808080;
+}
+
+.panel-grey a:hover {
+    color: #df8a13;
+}
+
+
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+
+.btn-circle.btn-xxl {
+    width: 140px;
+    height: 140px;
+    padding: 10px 16px;
+    border-radius: 70px;
+    font-size: 72px;
+    line-height: 1.60;
+}
+
+
+
+h3.subsection {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.mypre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* By default, the markdown editor areas are gray until they get the focus, this fixes it. */
+.md-editor>textarea {
+    background: white;
+}
+
+/* In some cases the container boxes get too much lateral margin. This fixes it. */
+.fix-container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+
+.returnsymbol {
+    // nothing inside
+}
+
+
+
+/* http://stackoverflow.com/questions/11815081/how-can-i-add-a-line-between-two-columns-using-twitter-bootstraps-grid-system */
+
+.vertical-line > [class*='col-']:before,
+.vertical-line > [class*='col-']:after {
+    background: #ddd;
+    bottom: 0;
+    content: " ";
+    position: absolute;
+    width: 1px;
+    top: 0;
+}
+.vertical-line > [class*='col-']:before {
+    left: 0;
+}
+.vertical-line > [class*='col-']:after {
+    right: -1px;
+}
+.vertical-line > [class*='col-']:first-child:before,
+.vertical-line > [class*='col-']:last-child:after {
+    display: none;
+}
+
+
+/* fix colors of `code` in markdown. */
+
+code {
+    color: #000;
+    background-color: #eee;
+}
+
+
+
+.my-handle {
+    cursor: move;
+    cursor: -webkit-grabbing;
+}
+
+
+.btn {
+    text-align: left;
+    padding-left: 12px;
+}
+
+
+.btn-center {
+    text-align: center;
+}
+
+
+.pixelated img {
+    image-rendering: -moz-crisp-edges;          /* Firefox             */
+    image-rendering: -o-crisp-edges;            /* Opera               */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+    image-rendering: pixelated;             /*                     */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+}
+

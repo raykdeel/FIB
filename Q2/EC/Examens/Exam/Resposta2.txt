@@ -1,0 +1,36 @@
+NOM I COGNOMS:Ricard Guixaró Trancho
+
+FITXER DE RESPOSTES A LA PREGUNTA 2
+
+a) Indica les expressions A, B0, B1, C, D, E que completin les corresponents inicialitzacions.
+
+    A = 
+
+    B0 = 1039
+
+    B1 = 254
+
+    C = 
+
+    D = 
+
+    E = 2
+  
+b) Quin és el valor final del registre $t1, en hexadecimal?
+
+        $t1 = 0x
+  
+   Quants bytes de la memòria es modifiquen?
+  
+        núm. bytes = 
+  
+   Quina variable global es modifica?
+  
+        Es modifica...
+  
+c) Indica el contingut final en hexadecimal del registre $t1
+ 
+        $t1 = 0x
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laboratorio de PRO2. Gestion de un almacen: Fichero Fuente Cjt_salas.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio de PRO2. Gestion de un almacen
+   &#160;<span id="projectnumber">v5.0 26-05-2018</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_salas.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt__salas_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _CJT_SALAS_HH_</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _CJT_SALAS_HH_</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sala_8hh.html">Sala.hh</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM </span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_cjt__salas.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt__salas.html">Cjt_salas</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">//Modificadoras  </span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_cjt__salas.html#ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8">poner_items</a>(<span class="keywordtype">int</span> iden_sala, <span class="keywordtype">string</span> iden_prod, <span class="keywordtype">int</span> uni_prod);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_cjt__salas.html#acd5d8368e51d7bbd557958063c81cc43">quitar_items</a>(<span class="keywordtype">int</span> iden_sala, <span class="keywordtype">string</span> iden_prod, <span class="keywordtype">int</span> uni_prod);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__salas.html#a1ecd0e8e0ae84290c354447e2a305e80">compactar</a> (<span class="keywordtype">int</span> iden_sala);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  </div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__salas.html#a540d49e9ee9a7a078e18f610399335b6">reorganizar</a> (<span class="keywordtype">int</span> iden_sala);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  </div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__salas.html#af4a9c609def322edba117ae76aa0b3b9">redimensionar</a> (<span class="keywordtype">int</span> iden_sala, <span class="keywordtype">int</span> filas, <span class="keywordtype">int</span> columnas);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">//Consultoras;</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="class_cjt__salas.html#a7e06b122fbbee58f24b8938bc2975b16">consultar_pos</a>(<span class="keywordtype">int</span> iden_sala, <span class="keywordtype">int</span> filas, <span class="keywordtype">int</span> columnas);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">// Lectura i escritura de un conjunto de salas</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__salas.html#ae79acb3461bd487e7bda3af42a3f96b7">leer</a>(<span class="keywordtype">int</span> num_sala);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__salas.html#a184f3ef5d7857c7f76ecef58b093f252">escribir</a>(<span class="keywordtype">int</span> iden_sala);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_cjt__salas.html#a3f130cc8bab35f449de8be69283af09e">  126</a></span>&#160;    vector&lt; Sala&gt; <a class="code" href="class_cjt__salas.html#a3f130cc8bab35f449de8be69283af09e">vec_salas</a>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="_sala_8hh_html"><div class="ttname"><a href="_sala_8hh.html">Sala.hh</a></div><div class="ttdoc">Especificación de la clase Sala. </div></div>
+<div class="ttc" id="class_cjt__salas_html_a1ecd0e8e0ae84290c354447e2a305e80"><div class="ttname"><a href="class_cjt__salas.html#a1ecd0e8e0ae84290c354447e2a305e80">Cjt_salas::compactar</a></div><div class="ttdeci">void compactar(int iden_sala)</div><div class="ttdoc">Compacta una estanteria. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00022">Cjt_salas.cc:22</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_a3f130cc8bab35f449de8be69283af09e"><div class="ttname"><a href="class_cjt__salas.html#a3f130cc8bab35f449de8be69283af09e">Cjt_salas::vec_salas</a></div><div class="ttdeci">vector&lt; Sala &gt; vec_salas</div><div class="ttdoc">Vector que representa el conjunto de salas del almacen. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8hh_source.html#l00126">Cjt_salas.hh:126</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_ae79acb3461bd487e7bda3af42a3f96b7"><div class="ttname"><a href="class_cjt__salas.html#ae79acb3461bd487e7bda3af42a3f96b7">Cjt_salas::leer</a></div><div class="ttdeci">void leer(int num_sala)</div><div class="ttdoc">Operación de escritura. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00051">Cjt_salas.cc:51</a></div></div>
+<div class="ttc" id="class_cjt__salas_html"><div class="ttname"><a href="class_cjt__salas.html">Cjt_salas</a></div><div class="ttdoc">Representa un conjunto de salas. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8hh_source.html#l00020">Cjt_salas.hh:20</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8"><div class="ttname"><a href="class_cjt__salas.html#ab9f5c933dbf2fa1c0bedf0ff5ae6eeb8">Cjt_salas::poner_items</a></div><div class="ttdeci">int poner_items(int iden_sala, string iden_prod, int uni_prod)</div><div class="ttdoc">Añade varias unidades de un producto a la sala. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00008">Cjt_salas.cc:8</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_acd5d8368e51d7bbd557958063c81cc43"><div class="ttname"><a href="class_cjt__salas.html#acd5d8368e51d7bbd557958063c81cc43">Cjt_salas::quitar_items</a></div><div class="ttdeci">int quitar_items(int iden_sala, string iden_prod, int uni_prod)</div><div class="ttdoc">Quita varios productos de la sala. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00014">Cjt_salas.cc:14</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_a7e06b122fbbee58f24b8938bc2975b16"><div class="ttname"><a href="class_cjt__salas.html#a7e06b122fbbee58f24b8938bc2975b16">Cjt_salas::consultar_pos</a></div><div class="ttdeci">string consultar_pos(int iden_sala, int filas, int columnas)</div><div class="ttdoc">Consultora de un producto. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00044">Cjt_salas.cc:44</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_a540d49e9ee9a7a078e18f610399335b6"><div class="ttname"><a href="class_cjt__salas.html#a540d49e9ee9a7a078e18f610399335b6">Cjt_salas::reorganizar</a></div><div class="ttdeci">void reorganizar(int iden_sala)</div><div class="ttdoc">Reorganiza una estanteria. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00031">Cjt_salas.cc:31</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_af4a9c609def322edba117ae76aa0b3b9"><div class="ttname"><a href="class_cjt__salas.html#af4a9c609def322edba117ae76aa0b3b9">Cjt_salas::redimensionar</a></div><div class="ttdeci">void redimensionar(int iden_sala, int filas, int columnas)</div><div class="ttdoc">Compacta una estanteria. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00037">Cjt_salas.cc:37</a></div></div>
+<div class="ttc" id="class_cjt__salas_html_a184f3ef5d7857c7f76ecef58b093f252"><div class="ttname"><a href="class_cjt__salas.html#a184f3ef5d7857c7f76ecef58b093f252">Cjt_salas::escribir</a></div><div class="ttdeci">void escribir(int iden_sala)</div><div class="ttdoc">Operación de escritura. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__salas_8cc_source.html#l00064">Cjt_salas.cc:64</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,188 @@
+escribir 1
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+escribir 2
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  0
+escribir 3
+  NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL
+  0
+escribir 4
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  0
+escribir 5
+  NULL NULL
+  0
+inventario
+compactar 1
+escribir 1
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+reorganizar 1
+escribir 1
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+quitar_prod aa1
+  error
+poner_prod aa1
+inventario
+  aa1 0
+quitar_items 4 aa1 5
+  5
+poner_items 2 aa1 3
+  0
+inventario
+  aa1 3
+consultar_prod aa1
+  3
+consultar_pos 2 4 2
+  aa1
+consultar_pos 2 4 1
+  aa1
+quitar_items 2 aa1 1
+  0
+compactar 2
+escribir 2
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  aa1 aa1 NULL
+  2
+  aa1 2
+poner_prod bb2
+poner_items 2 bb2 8
+  0
+inventario
+  aa1 2
+  bb2 8
+escribir 2
+  bb2 NULL NULL
+  bb2 bb2 bb2
+  bb2 bb2 bb2
+  aa1 aa1 bb2
+  10
+  aa1 2
+  bb2 8
+quitar_items 2 bb2 5
+  0
+escribir 2
+  bb2 NULL NULL
+  NULL bb2 bb2
+  NULL NULL NULL
+  aa1 aa1 NULL
+  5
+  aa1 2
+  bb2 3
+poner_prod cc3
+quitar_prod cc3
+inventario
+  aa1 2
+  bb2 3
+poner_prod cc3
+poner_items 2 cc3 4
+  0
+consultar_pos 2 2 2
+  bb2
+consultar_pos 2 3 1
+  cc3
+consultar_pos 2 2 3
+  bb2
+escribir 2
+  bb2 NULL NULL
+  NULL bb2 bb2
+  cc3 cc3 cc3
+  aa1 aa1 cc3
+  9
+  aa1 2
+  bb2 3
+  cc3 4
+compactar 2
+escribir 2
+  NULL NULL NULL
+  bb2 bb2 bb2
+  cc3 cc3 cc3
+  aa1 aa1 cc3
+  9
+  aa1 2
+  bb2 3
+  cc3 4
+reorganizar 2
+escribir 2
+  NULL NULL NULL
+  cc3 cc3 cc3
+  bb2 bb2 cc3
+  aa1 aa1 bb2
+  9
+  aa1 2
+  bb2 3
+  cc3 4
+poner_prod dd4
+distribuir dd4 17
+  3
+escribir 1
+  dd4 dd4
+  dd4 dd4
+  dd4 dd4
+  6
+  dd4 6
+redimensionar 1 2 3
+redimensionar 1 1 1
+  error
+escribir 1
+  dd4 dd4 dd4
+  dd4 dd4 dd4
+  6
+  dd4 6
+escribir 2
+  dd4 dd4 dd4
+  cc3 cc3 cc3
+  bb2 bb2 cc3
+  aa1 aa1 bb2
+  12
+  aa1 2
+  bb2 3
+  cc3 4
+  dd4 3
+escribir 3
+  NULL NULL NULL NULL NULL
+  dd4 dd4 NULL NULL NULL
+  2
+  dd4 2
+escribir 4
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  dd4 NULL NULL NULL NULL NULL
+  1
+  dd4 1
+escribir 5
+  dd4 dd4
+  2
+  dd4 2
+inventario
+  aa1 2
+  bb2 3
+  cc3 4
+  dd4 14
+poner_prod dd4
+  error
+consultar_pos 4 4 5
+  NULL
+consultar_prod dd4
+  14
+fin

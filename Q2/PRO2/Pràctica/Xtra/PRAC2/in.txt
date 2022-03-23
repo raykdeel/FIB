@@ -1,0 +1,56 @@
+7
+4 1 2 0 0 7 0 0 5 3 0 0 6 0 0
+4 1
+1 2
+2 2
+7 7
+5 4
+3 4
+6 7
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+escribir 6
+escribir 7
+quitar_prod AA11
+poner_prod AA11
+poner_items 5 AA11 21
+escribir 5
+redimensionar 5 2 9
+escribir 5
+inventario
+quitar_items 5 AA11 2
+escribir 5
+reorganizar 5
+escribir 5
+poner_prod BB22
+poner_items 5 BB22 1
+compactar 5
+escribir 5
+reorganizar 5
+inventario
+poner_prod CC33
+distribuir CC33 112
+quitar_items 4 AA11 5
+escribir 4
+redimensionar 4 7 7
+escribir 4
+redimensionar 4 5 10
+escribir 4
+distribuir BB11 100
+distribuir BB22 5
+quitar_items 4 CC33 3
+distribuir BB22 4
+escribir 4
+quitar_items 1 BB22 3
+poner_prod DD44
+poner_items 1 DD44 2
+reorganizar 1
+escribir 1
+inventario
+quitar_items 1 DD44 4
+quitar_prod DD44
+inventario
+fin

@@ -1,0 +1,98 @@
+14 12 # lee_cjt_especies
+
+# distancia a c
+14 12 68.1599
+
+# imprime_cjt_especies
+a ACACAGAGC
+c AACACCGCG
+
+# tabla_distancias
+a: c (68.1599)
+c:
+
+# imprime_cjt_especies
+a ACACAGAGC
+c AACACCGCG
+
+# tabla_distancias
+a: c (68.1599)
+c:
+
+# imprime_arbol_filogenetico
+[(ac, 34.08) [a][c]]
+
+# elimina_especie nuevo1
+ERROR: La especie nuevo1 no existe.
+
+# crea_especie nuevo1 TTTAAACCCGGG
+19 14 19 12 
+# inicializa_clusters
+a: c (68.1599) nuevo1 (53.9132)
+c: nuevo1 (67.7738)
+nuevo1:
+
+# elimina_especie a
+
+# imprime_cjt_especies
+c AACACCGCG
+nuevo1 TTTAAACCCGGG
+
+# tabla_distancias
+c: nuevo1 (67.7738)
+nuevo1:
+
+# imprime_cluster c
+[c]
+
+# imprime_cluster g
+ERROR: El cluster g no existe.
+
+# imprime_cluster cg
+ERROR: El cluster cg no existe.
+
+# imprime_cluster nuevo1
+[nuevo1]
+
+# imprime_cluster bfdec
+ERROR: El cluster bfdec no existe.
+
+# crea_especie nuevo2 AATCTGGCTCTGAATAAGACCCAGTATCAAGCCTTACCA
+112 12 112 19 
+# imprime_cluster a
+[a]
+
+# inicializa_clusters
+c: nuevo1 (67.7738) nuevo2 (65.3483)
+nuevo1: nuevo2 (68.2311)
+nuevo2:
+
+# crea_especie nuevo2 AAA
+ERROR: La especie nuevo2 ya existe.
+
+# imprime_arbol_filogenetico
+[(cnuevo2nuevo1, 34.0012) [(cnuevo2, 32.6742) [c][nuevo2]][nuevo1]]
+
+# lee_cjt_especies
+
+# imprime_cjt_especies
+
+# tabla_distancias
+
+# imprime_arbol_filogenetico
+ERROR: El conjunto de clusters es vacio.
+
+# crea_especie pangolin AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+# imprime_cjt_especies
+pangolin AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+# tabla_distancias
+pangolin:
+
+# obtener_gen pangolin
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+# imprime_arbol_filogenetico
+[pangolin]
+

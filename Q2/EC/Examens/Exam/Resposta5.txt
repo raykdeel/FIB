@@ -1,0 +1,20 @@
+NOM I COGNOMS: Ricard Guixaró Trancho
+
+FITXER DE RESPOSTES A LA PREGUNTA 5
+
+a) Troba les expressions A, B, C, D
+
+    A = 80
+
+    B = 4000
+
+    C = 200
+
+    D = 4
+
+b) Troba les expressions EXPR1 i EXPR2
+
+    EXPR1 = 4200
+
+    EXPR2 = bne
+

@@ -1,0 +1,219 @@
+\hypertarget{class_almacen}{}\section{Referencia de la Clase Almacen}
+\label{class_almacen}\index{Almacen@{Almacen}}
+
+
+Representa la estructura del almacen.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_almacen_a68a6084d5775d391c52d4825072a0612}{Almacen} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_almacen_a1f4b6a1196d0c571c06012096e9401a2}{Almacen} (Bin\+Tree$<$ int $>$ aux)
+\begin{DoxyCompactList}\small\item\em Copiadora por defecto. \end{DoxyCompactList}\item 
+Bin\+Tree$<$ int $>$ \hyperlink{class_almacen_af16a0a319f91554aad713c14ee95715b}{consultar\+\_\+almacen} ()
+\begin{DoxyCompactList}\small\item\em Consultora del almacen. \end{DoxyCompactList}\item 
+\hyperlink{class_almacen}{Almacen} \hyperlink{class_almacen_a36e2c6293837248738e5783e8e69795d}{leer\+\_\+almacen} ()
+\begin{DoxyCompactList}\small\item\em Se lee la distribucion de las salas del almacen. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a0757bdd016511f5b2b1019060c0b2a9c}{escribir} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ int $>$ \hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\+\_\+almacen}
+\begin{DoxyCompactList}\small\item\em Arbol que representa la estructura del almacen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa la estructura del almacen. 
+
+Representa la estructura del almacen con un arbol en que cada nodo contiene el identificador de sala 
+
+Definición en la línea 20 del archivo Almacen.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_almacen_a68a6084d5775d391c52d4825072a0612}\label{class_almacen_a68a6084d5775d391c52d4825072a0612}} 
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\subsubsection{\texorpdfstring{Almacen()}{Almacen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Almacen\+::\+Almacen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un almacen. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un almacen 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+8 \{ 
+9 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_almacen_a1f4b6a1196d0c571c06012096e9401a2}\label{class_almacen_a1f4b6a1196d0c571c06012096e9401a2}} 
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\subsubsection{\texorpdfstring{Almacen()}{Almacen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Almacen\+::\+Almacen (\begin{DoxyParamCaption}\item[{Bin\+Tree$<$ int $>$}]{aux }\end{DoxyParamCaption})}
+
+
+
+Copiadora por defecto. 
+
+Se introduce un arbol y devuelve un almacen
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un almacen 
+\end{DoxyPostcond}
+
+
+Definición en la línea 10 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+11 \{
+12   \hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}=aux;
+13  
+14 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_almacen_af16a0a319f91554aad713c14ee95715b}\label{class_almacen_af16a0a319f91554aad713c14ee95715b}} 
+\index{Almacen@{Almacen}!consultar\+\_\+almacen@{consultar\+\_\+almacen}}
+\index{consultar\+\_\+almacen@{consultar\+\_\+almacen}!Almacen@{Almacen}}
+\subsubsection{\texorpdfstring{consultar\+\_\+almacen()}{consultar\_almacen()}}
+{\footnotesize\ttfamily Bin\+Tree$<$ int $>$ Almacen\+::consultar\+\_\+almacen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del almacen. 
+
+Devuelve el arbol del parametro implcito estructura\+\_\+almacen
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el arbol de la estructura del almacen 
+\end{DoxyPostcond}
+
+
+Definición en la línea 16 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+16                                        \{
+17     \textcolor{keywordflow}{return} \hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}; \textcolor{comment}{// devuelve el p.i. del almacen}
+18 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_almacen_a36e2c6293837248738e5783e8e69795d}\label{class_almacen_a36e2c6293837248738e5783e8e69795d}} 
+\index{Almacen@{Almacen}!leer\+\_\+almacen@{leer\+\_\+almacen}}
+\index{leer\+\_\+almacen@{leer\+\_\+almacen}!Almacen@{Almacen}}
+\subsubsection{\texorpdfstring{leer\+\_\+almacen()}{leer\_almacen()}}
+{\footnotesize\ttfamily \hyperlink{class_almacen}{Almacen} Almacen\+::leer\+\_\+almacen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Se lee la distribucion de las salas del almacen. 
+
+En el canal estandard hay una serie de enteros, si el entero es 0 significa que el arbol no continua por uno de los subarboles posibles \begin{DoxyPrecond}{Precondición}
+En el canal estandard de entrada estan preparados una serie de enteros que representan la estructura del almacen 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene un arbol que representa la estructura del almacen teniendo en cuenta los parametros entrados 
+\end{DoxyPostcond}
+
+
+Definición en la línea 22 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+23 \{   
+24     \textcolor{keywordtype}{int} x;
+25     cin>>x ;
+26     \textcolor{keywordflow}{if}( x!=0)\{  \textcolor{comment}{//marca}
+27         \hyperlink{class_almacen}{Almacen} e,d;
+28         e=\hyperlink{class_almacen_a36e2c6293837248738e5783e8e69795d}{leer\_almacen}();
+29         d=\hyperlink{class_almacen_a36e2c6293837248738e5783e8e69795d}{leer\_almacen}();
+30         \hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}= BinTree<int> (x, e.
+      \hyperlink{class_almacen_af16a0a319f91554aad713c14ee95715b}{consultar\_almacen}(), d.\hyperlink{class_almacen_af16a0a319f91554aad713c14ee95715b}{consultar\_almacen}());
+31     \}
+32     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \hyperlink{class_almacen_a68a6084d5775d391c52d4825072a0612}{Almacen}(); \textcolor{comment}{//devuelve un almacen vacio}
+33     \textcolor{keywordflow}{return} \hyperlink{class_almacen_a68a6084d5775d391c52d4825072a0612}{Almacen}(\hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen});
+34    
+35 
+36 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_almacen_a0757bdd016511f5b2b1019060c0b2a9c}\label{class_almacen_a0757bdd016511f5b2b1019060c0b2a9c}} 
+\index{Almacen@{Almacen}!escribir@{escribir}}
+\index{escribir@{escribir}!Almacen@{Almacen}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void Almacen\+::escribir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito está inicializado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escribe las propiedades y el contenido del parámetro implícito por el canal estándar de salida 
+\end{DoxyPostcond}
+
+
+Definición en la línea 38 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+39 \{   
+40     cout<<\hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}.value()<<\textcolor{stringliteral}{" "};
+41     \hyperlink{class_almacen}{Almacen} a;
+42     \textcolor{keywordflow}{if}(!\hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}.left().empty())\{
+43         a=\hyperlink{class_almacen_a68a6084d5775d391c52d4825072a0612}{Almacen}(\hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}.left());
+44         a.\hyperlink{class_almacen_a0757bdd016511f5b2b1019060c0b2a9c}{escribir}();
+45     \}
+46     \textcolor{keywordflow}{if}(!\hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}.right().empty())\{
+47         a=\hyperlink{class_almacen_a68a6084d5775d391c52d4825072a0612}{Almacen}(\hyperlink{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}{estructura\_almacen}.right());
+48         a.\hyperlink{class_almacen_a0757bdd016511f5b2b1019060c0b2a9c}{escribir}();
+49     \}
+50 
+51 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}\label{class_almacen_a0744bed3ca8c796990c939bbf7fc03b9}} 
+\index{Almacen@{Almacen}!estructura\+\_\+almacen@{estructura\+\_\+almacen}}
+\index{estructura\+\_\+almacen@{estructura\+\_\+almacen}!Almacen@{Almacen}}
+\subsubsection{\texorpdfstring{estructura\+\_\+almacen}{estructura\_almacen}}
+{\footnotesize\ttfamily Bin\+Tree$<$int$>$ Almacen\+::estructura\+\_\+almacen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Arbol que representa la estructura del almacen. 
+
+
+
+Definición en la línea 75 del archivo Almacen.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_almacen_8hh}{Almacen.\+hh}\item 
+\hyperlink{_almacen_8cc}{Almacen.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,277 @@
+\hypertarget{class_cjt__productos}{}\section{Referencia de la Clase Cjt\+\_\+productos}
+\label{class_cjt__productos}\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+
+
+Representa el inventario del almacen con atributos identificador y unidades.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cjt__productos_a501153e137c6437ff84faac121a88bc8}{poner\+\_\+prod} (string iden\+\_\+prod)
+\begin{DoxyCompactList}\small\item\em Modificadora con valores concretos. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__productos_a2da6626c288772c1169dcf32c39202e6}{quitar\+\_\+prod} (string iden\+\_\+prod)
+\begin{DoxyCompactList}\small\item\em Destructora con valores concretos. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__productos_ac120487a0d46654b0d89654f20055083}{modificar} (string iden\+\_\+prod, int uni\+\_\+prod)
+\begin{DoxyCompactList}\small\item\em Modificadora de los atributos. \end{DoxyCompactList}\item 
+int \hyperlink{class_cjt__productos_a8198f3b57f6d1d9fd4096e3e19fe9a46}{consultar\+\_\+prod} (string iden\+\_\+prod)
+\begin{DoxyCompactList}\small\item\em Consultora de las unidades. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cjt__productos_a33f8148c4da6fe03d49c993e4b477494}{existe\+\_\+prod} (string iden\+\_\+prod)
+\begin{DoxyCompactList}\small\item\em Consultora de producto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__productos_a51582783f3f107f84cc3c5f8cccded36}{escribir} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, int $>$ \hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\+\_\+productos}
+\begin{DoxyCompactList}\small\item\em inventario del almacen \end{DoxyCompactList}\item 
+map$<$ string, int $>$\+::iterator \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}
+\begin{DoxyCompactList}\small\item\em iterador del inventario del almacen \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa el inventario del almacen con atributos identificador y unidades. 
+
+Definición en la línea 20 del archivo Cjt\+\_\+productos.\+hh.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt__productos_a501153e137c6437ff84faac121a88bc8}\label{class_cjt__productos_a501153e137c6437ff84faac121a88bc8}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!poner\+\_\+prod@{poner\+\_\+prod}}
+\index{poner\+\_\+prod@{poner\+\_\+prod}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{poner\+\_\+prod()}{poner\_prod()}}
+{\footnotesize\ttfamily void Cjt\+\_\+productos\+::poner\+\_\+prod (\begin{DoxyParamCaption}\item[{string}]{iden\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Modificadora con valores concretos. 
+
+Se introduce un identificador de producto. Si el producto ya existia se produce un error, sino el producto se da de alta en el sistema con cero unidades. \begin{DoxyPrecond}{Precondición}
+iden\+\_\+prod$>$0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una prenda con identificador \char`\"{}iden\+\_\+prod\char`\"{} y unidades \char`\"{}uni\+\_\+prod\char`\"{} 0 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Cjt\+\_\+productos.\+cc.
+
+
+\begin{DoxyCode}
+8 \{
+9   \textcolor{keywordflow}{if}(iden\_prod>\textcolor{stringliteral}{""})\{
+10     \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.find(iden\_prod);
+11     \textcolor{keywordflow}{if}(\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}==\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.end())\{
+12       \hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}[iden\_prod]=0; \textcolor{comment}{//pone producto con 0 unidades}
+13     \}
+14     \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+15   \}
+16   \textcolor{keywordflow}{else}  cout<<\textcolor{stringliteral}{"  error"}<<endl;
+17   
+18 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__productos_a2da6626c288772c1169dcf32c39202e6}\label{class_cjt__productos_a2da6626c288772c1169dcf32c39202e6}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!quitar\+\_\+prod@{quitar\+\_\+prod}}
+\index{quitar\+\_\+prod@{quitar\+\_\+prod}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{quitar\+\_\+prod()}{quitar\_prod()}}
+{\footnotesize\ttfamily void Cjt\+\_\+productos\+::quitar\+\_\+prod (\begin{DoxyParamCaption}\item[{string}]{iden\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Destructora con valores concretos. 
+
+Se introduce un identificador de producto. Si el producto no existe, o ya existe y quedan unidades se produce un error, sino el producto se da de baja en el sistema. \begin{DoxyPrecond}{Precondición}
+iden\+\_\+prod $>$0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es que el producto se da de baja del sistema 
+\end{DoxyPostcond}
+
+
+Definición en la línea 20 del archivo Cjt\+\_\+productos.\+cc.
+
+
+\begin{DoxyCode}
+21 \{
+22   \textcolor{keywordflow}{if}(iden\_prod>\textcolor{stringliteral}{""})\{
+23     \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.find(iden\_prod);
+24 
+25     \textcolor{keywordflow}{if}(\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}!=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.end())\{
+26 
+27       \textcolor{keywordflow}{if}(\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}->second==0)\{
+28 
+29         \hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.erase(iden\_prod); \textcolor{comment}{//elimina si tiene 0 unidades}
+30       \}
+31       \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+32     \}
+33     \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+34   \}
+35   \textcolor{keywordflow}{else}  cout<<\textcolor{stringliteral}{"  error"}<<endl;
+36 
+37 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__productos_ac120487a0d46654b0d89654f20055083}\label{class_cjt__productos_ac120487a0d46654b0d89654f20055083}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!modificar@{modificar}}
+\index{modificar@{modificar}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{modificar()}{modificar()}}
+{\footnotesize\ttfamily void Cjt\+\_\+productos\+::modificar (\begin{DoxyParamCaption}\item[{string}]{iden\+\_\+prod,  }\item[{int}]{uni\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Modificadora de los atributos. 
+
+Se introduce un identificador de producto y sus unidades. Si el producto no existe o sus unidades son negativas da error. Sino el parametro implicito del producto con \char`\"{}iden\+\_\+prod\char`\"{} pasa a tener \char`\"{}uni\+\_\+prod\char`\"{} unidades \begin{DoxyPrecond}{Precondición}
+iden\+\_\+prod$>$0 uni\+\_\+prod$>$=0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener identificador \char`\"{}iden\+\_\+prod\char`\"{}y unidades \char`\"{}uni\+\_\+prod\char`\"{} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 39 del archivo Cjt\+\_\+productos.\+cc.
+
+
+\begin{DoxyCode}
+40 \{
+41   \textcolor{keywordflow}{if}(iden\_prod>\textcolor{stringliteral}{""} and uni\_prod>=0)\{
+42     \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.find(iden\_prod);
+43     \textcolor{keywordflow}{if}(\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}!=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.end())\{
+44       \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}->second= uni\_prod; 
+45     \}
+46     \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+47   \}
+48   \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+49 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__productos_a8198f3b57f6d1d9fd4096e3e19fe9a46}\label{class_cjt__productos_a8198f3b57f6d1d9fd4096e3e19fe9a46}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!consultar\+\_\+prod@{consultar\+\_\+prod}}
+\index{consultar\+\_\+prod@{consultar\+\_\+prod}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{consultar\+\_\+prod()}{consultar\_prod()}}
+{\footnotesize\ttfamily int Cjt\+\_\+productos\+::consultar\+\_\+prod (\begin{DoxyParamCaption}\item[{string}]{iden\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Consultora de las unidades. 
+
+Se introduce un identificador de producto. Si no existe, se produce un error. Si existe se escribe cuantas unidades hay en total en el almacen. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado son las unidades del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 51 del archivo Cjt\+\_\+productos.\+cc.
+
+
+\begin{DoxyCode}
+52 \{
+53   \textcolor{keywordflow}{if}(iden\_prod>\textcolor{stringliteral}{""} )\{
+54     \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.find(iden\_prod);
+55     \textcolor{keywordflow}{if}(\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}!=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.end())\{
+56       \textcolor{keywordflow}{return}  \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}->second;
+57     \}
+58     \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+59   \}
+60   \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"  error"}<<endl;
+61   \textcolor{keywordflow}{return} -1;
+62 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__productos_a33f8148c4da6fe03d49c993e4b477494}\label{class_cjt__productos_a33f8148c4da6fe03d49c993e4b477494}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!existe\+\_\+prod@{existe\+\_\+prod}}
+\index{existe\+\_\+prod@{existe\+\_\+prod}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{existe\+\_\+prod()}{existe\_prod()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+productos\+::existe\+\_\+prod (\begin{DoxyParamCaption}\item[{string}]{iden\+\_\+prod }\end{DoxyParamCaption})}
+
+
+
+Consultora de producto. 
+
+Se introduce un identificador de producto. Si no existe devuelve falso. Si existe devuelve true. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un booleano 
+\end{DoxyPostcond}
+
+
+Definición en la línea 64 del archivo Cjt\+\_\+productos.\+cc.
+
+
+\begin{DoxyCode}
+65 \{
+66   \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.find(iden\_prod);
+67   \textcolor{keywordflow}{if}(\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}!=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.end())\{
+68     \textcolor{keywordflow}{return}  \textcolor{keyword}{true};
+69   \}
+70   \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false}; 
+71 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__productos_a51582783f3f107f84cc3c5f8cccded36}\label{class_cjt__productos_a51582783f3f107f84cc3c5f8cccded36}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!escribir@{escribir}}
+\index{escribir@{escribir}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void Cjt\+\_\+productos\+::escribir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+Escribe por pantalla el inventario del almacen \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han escrito los identificadores de producto que hay las estanterias. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 73 del archivo Cjt\+\_\+productos.\+cc.
+
+
+\begin{DoxyCode}
+74 \{
+75   \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it} = \hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.begin();
+76   \textcolor{keywordflow}{while}(\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}!=\hyperlink{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}{map\_productos}.end())\{
+77     cout<<\textcolor{stringliteral}{"  "}<<\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}->first<<\textcolor{stringliteral}{" "}<<\hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}->second<<endl;
+78     \hyperlink{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}{it}++;
+79  \}
+80 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}\label{class_cjt__productos_a44e63c644fdec6cff81dcdb3cf79860c}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!map\+\_\+productos@{map\+\_\+productos}}
+\index{map\+\_\+productos@{map\+\_\+productos}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{map\+\_\+productos}{map\_productos}}
+{\footnotesize\ttfamily map$<$string, int$>$ Cjt\+\_\+productos\+::map\+\_\+productos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inventario del almacen 
+
+
+
+Definición en la línea 95 del archivo Cjt\+\_\+productos.\+hh.
+
+\mbox{\Hypertarget{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}\label{class_cjt__productos_adedbe2194ed053eb446ec367e6d5e60e}} 
+\index{Cjt\+\_\+productos@{Cjt\+\_\+productos}!it@{it}}
+\index{it@{it}!Cjt\+\_\+productos@{Cjt\+\_\+productos}}
+\subsubsection{\texorpdfstring{it}{it}}
+{\footnotesize\ttfamily map$<$string,int$>$\+::iterator Cjt\+\_\+productos\+::it\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+iterador del inventario del almacen 
+
+
+
+Definición en la línea 97 del archivo Cjt\+\_\+productos.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt__productos_8hh}{Cjt\+\_\+productos.\+hh}\item 
+\hyperlink{_cjt__productos_8cc}{Cjt\+\_\+productos.\+cc}\end{DoxyCompactItemize}
