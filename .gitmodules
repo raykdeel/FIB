@@ -7,3 +7,18 @@
 [submodule "Q6/ECSDI/Lab/ECSDI"]
 	path = Q6/ECSDI/Lab/ECSDI
 	url = git@github.com:thiagobulls05/ECSDI.git
+[submodule "Q6/ASW/Lab/waslab01"]
+	path = Q6/ASW/Lab/waslab01
+	url = git@github.com:rguixaro/waslab01.git
+[submodule "Q6/ASW/Lab/waslab03"]
+	path = Q6/ASW/Lab/waslab03
+	url = git@github.com:XavierPina/waslab03.git
+[submodule "Q6/ASW/Lab/waslab04"]
+	path = Q6/ASW/Lab/waslab04
+	url = git@github.com:rguixaro/waslab04.git
+[submodule "Q6/ASW/Lab/waslab05"]
+	path = Q6/ASW/Lab/waslab05
+	url = git@github.com:rguixaro/waslab05.git
+[submodule "Q6/ASW/Lab/ASW-Project"]
+	path = Q6/ASW/Lab/ASW-Project
+	url = git@github.com:rguixaro/ASW-Project.git
