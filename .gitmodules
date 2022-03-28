@@ -1,3 +1,9 @@
 [submodule "Q5/PROP/Projecte/Recommender-System"]
 	path = Q5/PROP/Projecte/Recommender-System
 	url = https://github.com/rguixaro/Recommender-System
+[submodule "Q6/VC/VC-Lab"]
+	path = Q6/VC/VC-Lab
+	url = git@github.com:rguixaro/VC-Lab.git
+[submodule "Q6/ECSDI/Lab/ECSDI"]
+	path = Q6/ECSDI/Lab/ECSDI
+	url = git@github.com:thiagobulls05/ECSDI.git
