@@ -25,3 +25,6 @@
 [submodule "Q5/GPS/Continuous Integration/GPS_11"]
 	path = Q5/GPS/Continuous Integration/GPS_11
 	url = git@github.com:rguixaro/GPS_11.git
+[submodule "Q6/ASW/Lab/ASW-Project-FrontEnd"]
+	path = Q6/ASW/Lab/ASW-Project-FrontEnd
+	url = git@github.com:rguixaro/ASW-Project-FrontEnd.git
